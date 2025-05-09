@@ -40,3 +40,20 @@ class AnalysisResponse(BaseModel):
     insurance_recommendations: Dict[str, InsuranceRecommendation] = Field(..., description="Insurance recommendations")
     financial_advice: FinancialAdvice = Field(..., description="Personalized financial advice")
     summary: str = Field(..., description="Text summary of the analysis")
+
+class InsuranceRequest(BaseModel):
+    Age: int
+    Gender: str
+    Smoking_Status: str
+    Annual_Income: float
+    Existing_Loans_Debts: int
+    Existing_Insurance_Policies: int
+    Desired_Sum_Assured: float
+    Policy_Term_Years: int
+    Premium_Payment_Option: str
+    Death_Benefit_Option: str
+    Payout_Type: str
+    Medical_History: str
+    Lifestyle_Habits: str
+    Interest_in_Optional_Riders: bool
+    Interest_in_Tax_Saving: bool
