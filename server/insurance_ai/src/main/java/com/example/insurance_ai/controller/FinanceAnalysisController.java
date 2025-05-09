@@ -1,4 +1,11 @@
 package com.example.insurance_ai.controller;
+
+import com.example.insurance_ai.dto.AnalysisResponse;
+import com.example.insurance_ai.service.FinanceAnalysisService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
 @RestController
 @RequestMapping("/api/finance")
 @CrossOrigin(origins = "*")
