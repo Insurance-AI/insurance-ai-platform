@@ -56,6 +56,7 @@ async def predict_plan(data: InsuranceRequest):
     try:
         logger.info("Received insurance prediction request")
         recommendations = recommend(data.dict())
+        print(recommendations)
         return {"recommendations": recommendations}
     except Exception as e:
         logger.error(f"Prediction error: {e}")

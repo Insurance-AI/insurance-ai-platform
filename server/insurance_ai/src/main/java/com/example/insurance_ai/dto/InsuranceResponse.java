@@ -8,5 +8,5 @@ import java.util.List;
 @Getter
 @Setter
 public class InsuranceResponse {
-    private List<String> recommendations;
+    private List<PlanRecommendation> recommendations;
 }
