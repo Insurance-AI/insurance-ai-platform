@@ -75,16 +75,20 @@ public class FinanceAnalysisService {
 
     private AnalysisResponse parseAnalysisResponse(JsonNode jsonResult) {
         return AnalysisResponse.builder()
+                .transactionCount(jsonResult.has("transaction_count") ?
+                        jsonResult.get("transaction_count").asInt() : null)
+                .totalSpending(jsonResult.has("total_spending") ?
+                        jsonResult.get("total_spending").asDouble() : null)
                 .weeklySpending(jsonResult.has("spending_patterns") && jsonResult.get("spending_patterns").has("weekly_trend") ?
-                        convertToMap(jsonResult.get("spending_patterns").get("weekly_trend")) : null)
+                        convertToDoubleMap(jsonResult.get("spending_patterns").get("weekly_trend")) : null)
                 .monthlySpending(jsonResult.has("spending_patterns") && jsonResult.get("spending_patterns").has("monthly_trend") ?
-                        convertToMap(jsonResult.get("spending_patterns").get("monthly_trend")) : null)
+                        convertToDoubleMap(jsonResult.get("spending_patterns").get("monthly_trend")) : null)
                 .yearlySpending(jsonResult.has("yearly_spending") ?
-                        convertToMap(jsonResult.get("yearly_spending")) : null)
+                        convertToDoubleMap(jsonResult.get("yearly_spending")) : null)
                 .categorySpending(jsonResult.has("spending_patterns") && jsonResult.get("spending_patterns").has("top_categories") ?
-                        convertToMap(jsonResult.get("spending_patterns").get("top_categories")) : null)
+                        convertToDoubleMap(jsonResult.get("spending_patterns").get("top_categories")) : null)
                 .insuranceCounts(jsonResult.has("spending_patterns") && jsonResult.get("spending_patterns").has("top_insurance_labels") ?
-                        convertToMap(jsonResult.get("spending_patterns").get("top_insurance_labels")) : null)
+                        convertToIntegerMap(jsonResult.get("spending_patterns").get("top_insurance_labels")) : null)
                 .insuranceSpending(jsonResult.has("insurance_spending") ?
                         convertToMap(jsonResult.get("insurance_spending")) : null)
                 .recommendations(jsonResult.has("insurance_recommendations") ?
@@ -94,6 +98,9 @@ public class FinanceAnalysisService {
                 .categoryInsights(convertCategoryInsights(jsonResult))
                 .financialAdvice(jsonResult.has("financial_advice") ?
                         convertToMap(jsonResult.get("financial_advice")) : null)
+                .dailyAverages(jsonResult.has("spending_patterns") && jsonResult.get("spending_patterns").has("daily_averages") ?
+                        convertToDoubleMap(jsonResult.get("spending_patterns").get("daily_averages")) : null)
+                .summary(jsonResult.has("summary") ? jsonResult.get("summary").asText() : null)
                 .build();
     }
 
@@ -116,6 +123,41 @@ public class FinanceAnalysisService {
         }
 
         return insights;
+    }
+
+    private Map<String, Double> convertToDoubleMap(JsonNode jsonNode) {
+        Map<String, Double> result = new HashMap<>();
+        Iterator<String> fieldNames = jsonNode.fieldNames();
+
+        while (fieldNames.hasNext()) {
+            String fieldName = fieldNames.next();
+            JsonNode fieldValue = jsonNode.get(fieldName);
+
+            if (fieldValue.isNumber()) {
+                result.put(fieldName, fieldValue.asDouble());
+            }
+        }
+
+        return result;
+    }
+
+    private Map<String, Integer> convertToIntegerMap(JsonNode jsonNode) {
+        Map<String, Integer> result = new HashMap<>();
+        Iterator<String> fieldNames = jsonNode.fieldNames();
+
+        while (fieldNames.hasNext()) {
+            String fieldName = fieldNames.next();
+            JsonNode fieldValue = jsonNode.get(fieldName);
+
+            if (fieldValue.isInt()) {
+                result.put(fieldName, fieldValue.asInt());
+            } else if (fieldValue.isDouble()) {
+                // Handle case where JSON has a number that might be stored as double but represents an integer
+                result.put(fieldName, fieldValue.asInt());
+            }
+        }
+
+        return result;
     }
 
     private Map<String, Object> convertToMap(JsonNode jsonNode) {

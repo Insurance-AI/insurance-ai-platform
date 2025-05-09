@@ -8,16 +8,18 @@ import java.util.Map;
 @Data
 @Builder
 public class AnalysisResponse {
-    private Map<String, Object> weeklySpending;
-    private Map<String, Object> monthlySpending;
-    private Map<String, Object> yearlySpending;
-    private Map<String, Object> categorySpending;
-    private Map<String, Object> insuranceCounts;
+    private Integer transactionCount;
+    private Double totalSpending;
+    private Map<String, Double> weeklySpending;
+    private Map<String, Double> monthlySpending;
+    private Map<String, Double> yearlySpending;
+    private Map<String, Double> categorySpending;
+    private Map<String, Integer> insuranceCounts;
     private Map<String, Object> insuranceSpending;
     private Map<String, Map<String, Object>> recommendations;
     private List<Map<String, Object>> transactions;
     private List<Map<String, Object>> categoryInsights;
     private Map<String, Object> financialAdvice;
-
-
+    private Map<String, Double> dailyAverages;
+    private String summary;
 }
