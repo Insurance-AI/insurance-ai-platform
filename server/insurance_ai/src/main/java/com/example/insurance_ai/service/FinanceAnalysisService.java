@@ -1,5 +1,23 @@
 package com.example.insurance_ai.service;
 
+import com.example.insurance_ai.dto.AnalysisResponse;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Iterator;
+
 @Service
 public class FinanceAnalysisService {
     @Value("${python.script.path}")
@@ -7,6 +25,8 @@ public class FinanceAnalysisService {
 
     @Value("${python.executable.path}")
     private String pythonExecutablePath;
+
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
     public AnalysisResponse analyzeData(MultipartFile file) throws Exception {
         // Save the uploaded file temporarily
@@ -47,7 +67,7 @@ public class FinanceAnalysisService {
 
         if (jsonStartIndex >= 0 && jsonEndIndex > jsonStartIndex) {
             String jsonStr = jsonOutput.substring(jsonStartIndex, jsonEndIndex);
-            JSONObject jsonResult = new JSONObject(jsonStr);
+            JsonNode jsonResult = objectMapper.readTree(jsonStr);
 
             // Clean up the temporary file
             Files.deleteIfExists(tempFile);
@@ -59,42 +79,73 @@ public class FinanceAnalysisService {
         }
     }
 
-    private AnalysisResponse parseAnalysisResponse(JSONObject jsonResult) {
-        // Parse the JSON result into AnalysisResponse object
-        // This is a simplified version - you'll need to adapt it based on the actual output
+    private AnalysisResponse parseAnalysisResponse(JsonNode jsonResult) {
         return AnalysisResponse.builder()
-                .weeklySpending(jsonResult.has("weekly_spending") ? jsonResult.getJSONObject("weekly_spending").toMap() : null)
-                .monthlySpending(jsonResult.has("monthly_spending") ? jsonResult.getJSONObject("monthly_spending").toMap() : null)
-                .yearlySpending(jsonResult.has("yearly_spending") ? jsonResult.getJSONObject("yearly_spending").toMap() : null)
-                .categorySpending(jsonResult.has("category_spending") ? jsonResult.getJSONObject("category_spending").toMap() : null)
-                .insuranceCounts(jsonResult.has("insurance_counts") ? jsonResult.getJSONObject("insurance_counts").toMap() : null)
-                .insuranceSpending(jsonResult.has("insurance_spending") ? jsonResult.getJSONObject("insurance_spending").toMap() : null)
-                .recommendations(jsonResult.has("recommendations") ? convertToMapOfMaps(jsonResult.getJSONObject("recommendations")) : null)
-                .transactions(jsonResult.has("transactions") ? convertToList(jsonResult.getJSONArray("transactions")) : null)
-                .categoryInsights(jsonResult.has("category_insights") ? convertToList(jsonResult.getJSONArray("category_insights")) : null)
-                .financialAdvice(jsonResult.has("financial_advice") ? jsonResult.getJSONObject("financial_advice").toMap() : null)
+                .weeklySpending(jsonResult.has("weekly_spending") ? convertToMap(jsonResult.get("weekly_spending")) : null)
+                .monthlySpending(jsonResult.has("monthly_spending") ? convertToMap(jsonResult.get("monthly_spending")) : null)
+                .yearlySpending(jsonResult.has("yearly_spending") ? convertToMap(jsonResult.get("yearly_spending")) : null)
+                .categorySpending(jsonResult.has("category_spending") ? convertToMap(jsonResult.get("category_spending")) : null)
+                .insuranceCounts(jsonResult.has("insurance_counts") ? convertToMap(jsonResult.get("insurance_counts")) : null)
+                .insuranceSpending(jsonResult.has("insurance_spending") ? convertToMap(jsonResult.get("insurance_spending")) : null)
+                .recommendations(jsonResult.has("recommendations") ? convertToMapOfMaps(jsonResult.get("recommendations")) : null)
+                .transactions(jsonResult.has("transactions") ? convertToList(jsonResult.get("transactions")) : null)
+                .categoryInsights(jsonResult.has("category_insights") ? convertToList(jsonResult.get("category_insights")) : null)
+                .financialAdvice(jsonResult.has("financial_advice") ? convertToMap(jsonResult.get("financial_advice")) : null)
                 .build();
     }
 
-    private Map<String, Map<String, Object>> convertToMapOfMaps(JSONObject jsonObject) {
-        Map<String, Map<String, Object>> result = new HashMap<>();
-        for (String key : jsonObject.keySet()) {
-            JSONObject innerJson = jsonObject.getJSONObject(key);
-            Map<String, Object> innerMap = new HashMap<>();
-            for (String innerKey : innerJson.keySet()) {
-                innerMap.put(innerKey, innerJson.get(innerKey));
+    private Map<String, Object> convertToMap(JsonNode jsonNode) {
+        Map<String, Object> result = new HashMap<>();
+        Iterator<String> fieldNames = jsonNode.fieldNames();
+
+        while (fieldNames.hasNext()) {
+            String fieldName = fieldNames.next();
+            JsonNode fieldValue = jsonNode.get(fieldName);
+
+            if (fieldValue.isTextual()) {
+                result.put(fieldName, fieldValue.asText());
+            } else if (fieldValue.isInt()) {
+                result.put(fieldName, fieldValue.asInt());
+            } else if (fieldValue.isLong()) {
+                result.put(fieldName, fieldValue.asLong());
+            } else if (fieldValue.isDouble()) {
+                result.put(fieldName, fieldValue.asDouble());
+            } else if (fieldValue.isBoolean()) {
+                result.put(fieldName, fieldValue.asBoolean());
+            } else if (fieldValue.isObject()) {
+                result.put(fieldName, convertToMap(fieldValue));
+            } else if (fieldValue.isArray()) {
+                result.put(fieldName, convertToList(fieldValue));
+            } else if (fieldValue.isNull()) {
+                result.put(fieldName, null);
             }
-            result.put(key, innerMap);
         }
+
         return result;
     }
 
-    private List<Map<String, Object>> convertToList(org.json.JSONArray jsonArray) {
-        List<Map<String, Object>> result = new ArrayList<>();
-        for (int i = 0; i < jsonArray.length(); i++) {
-            result.add(jsonArray.getJSONObject(i).toMap());
+    private Map<String, Map<String, Object>> convertToMapOfMaps(JsonNode jsonNode) {
+        Map<String, Map<String, Object>> result = new HashMap<>();
+        Iterator<String> fieldNames = jsonNode.fieldNames();
+
+        while (fieldNames.hasNext()) {
+            String fieldName = fieldNames.next();
+            JsonNode fieldValue = jsonNode.get(fieldName);
+            result.put(fieldName, convertToMap(fieldValue));
         }
+
+        return result;
+    }
+
+    private List<Map<String, Object>> convertToList(JsonNode jsonArray) {
+        List<Map<String, Object>> result = new ArrayList<>();
+
+        for (JsonNode item : jsonArray) {
+            if (item.isObject()) {
+                result.add(convertToMap(item));
+            }
+        }
+
         return result;
     }
 }
-

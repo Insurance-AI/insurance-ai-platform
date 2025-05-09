@@ -18,4 +18,6 @@ public class AnalysisResponse {
     private List<Map<String, Object>> transactions;
     private List<Map<String, Object>> categoryInsights;
     private Map<String, Object> financialAdvice;
+
+
 }
