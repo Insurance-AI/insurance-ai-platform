@@ -82,10 +82,13 @@ const RecommendationForm = () => {
 
       localStorage.setItem("comparison_result", JSON.stringify(compareResponse.data));
 
-      router.push("/comparision-dashboard");
     } catch (error) {
       console.error("Error fetching recommendations:", error);
     }
+  };
+
+  const handleViewComparison = () => {
+    router.push("/comparision-dashboard");
   };
 
   return (
@@ -123,6 +126,9 @@ const RecommendationForm = () => {
               <PolicyCard key={index} policy={policy} />
             ))}
           </div>
+          <Button onClick={handleViewComparison} className="w-full mt-4">
+            View Comparison
+          </Button>
         </div>
       )}
     </div>

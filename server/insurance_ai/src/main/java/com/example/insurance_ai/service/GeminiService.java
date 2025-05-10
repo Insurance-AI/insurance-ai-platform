@@ -63,6 +63,8 @@ public class GeminiService {
             // Optional: validate it's proper JSON
             new JSONObject(cleanedJson); // throws if not valid
 
+            System.out.println(cleanedJson);
+
             return cleanedJson;
         }
     }
