@@ -1,35 +1,25 @@
-Plan Name,Plan Type,Min Age,Max Age,Premium,Coverage,Exclusions,Payment Frequency,Description,Min Income
-LIC's Single Premium Endowment Plan,Endowment Plan,8,65,1500,"Hospitalization, Critical Illness",Accidents,Yearly,Single premium payment option,5000
-LIC's New Endowment Plan,Endowment Plan,8,60,1200,"Life Cover, Disability",Chronic Illness,Yearly,Endowment with life cover,4000
-LIC's New Jeevan Anand,Endowment Plan,18,50,1800,"Life Cover, Accident",Pre-existing conditions,Quarterly,Combination of endowment and life cover,4500
-LIC's Jeevan Lakshya,Endowment Plan,18,50,1700,Education Benefit,Lifestyle diseases,Quarterly,Supports education expenses,4000
-LIC's Jeevan Labh Plan,Endowment Plan,8,59,1600,Death Benefit,None,Half-yearly,Limited premium payment,4200
-LIC's Amritbaal,Child Plan,0,13,800,Child Education,Age restriction,Yearly,Secure child's future,3000
-LIC's Bima Jyoti,Endowment Plan,18,60,1900,Guaranteed Additions,None,Yearly,Guaranteed benefits,4800
-LIC's Jeevan Azad,Endowment Plan,18,55,1700,Survival Benefit,Lifestyle diseases,Quarterly,Flexibility in cover,4200
-LIC's New Money Back Plan-20 Years,Endowment Plan,13,50,1600,Survival Benefit,Critical Illness,Half-yearly,Money back plan,3900
-LIC's New Money Back Plan-25 Years,Endowment Plan,13,45,1650,Maturity Benefit,Chronic Illness,Yearly,25-year tenure plan,4000
-LIC's New Children's Money Back Plan,Child Plan,0,12,900,Child Marriage/Education,Eligibility age,Half-yearly,Child-oriented,3200
-LIC's Jeevan Tarun,Child Plan,0,12,950,Child Education,Age limit,Yearly,Education-focused,3100
-LIC's Bima Ratna,Endowment Plan,18,55,1750,Death & Maturity Benefit,Lifestyle diseases,Yearly,Combined benefit,4500
-LIC’s Digi Credit Life,Endowment Plan,18,60,2000,Loan Protection,Credit defaults,Monthly,Digital term plan,5000
-LIC’s Yuva Credit Life,Endowment Plan,18,40,1500,Youth Cover,Employment Status,Monthly,Young adult cover,3500
-LIC’s Yuva Term,Term Plan,18,40,1400,Life Cover,Health issues,Quarterly,Basic term life,3000
-LIC's New Tech-Term,Term Plan,18,65,1600,Term Cover,Pre-existing conditions,Monthly,Technology-supported term plan,4500
-LIC's New Jeevan Amar,Term Plan,18,65,1550,Comprehensive Cover,None,Half-yearly,Flexible term plan,4400
-HDFC Click 2 Protect,ULIP,18,65,2000,"Critical Illness, Life Cover",Pre-existing conditions,Quarterly,Life cover with critical illness benefits,6000
-SBI Life eShield,Term Plan,18,65,1800,Life Cover,Accidents,Yearly,Term plan for young professionals,5000
-Max Life Online Term Plan,Endowment Plan,18,60,1750,"Maturity, Disability",None,Half-yearly,Online purchase option,4700
-ICICI Prudential iProtect Smart,Term Plan,18,65,1900,"Critical Illness, Terminal Illness",Pre-existing conditions,Quarterly,Smart protection,5800
-Bajaj Allianz Life Smart Protect,ULIP,18,60,1850,Life & Investment,Stock Market Risk,Monthly,ULIP with smart features,5500
-Tata AIA Life Insurance,Term Plan,18,65,1700,Term + Accidental,Chronic diseases,Monthly,Accident + term insurance,5200
-PNB MetLife Mera Term Plan Plus,Term Plan,18,65,1850,"Terminal Illness, Accidental Death",Lifestyle habits,Yearly,Flexible term cover with riders,4800
-Bharti AXA Life Flexi Term,Term Plan,18,65,1750,"Life Cover, Critical Illness",Smoking history,Quarterly,Term cover with income payout,4600
-Kotak e-Term Plan,Term Plan,18,65,1800,"Death Benefit, Critical Illness",Medical conditions,Monthly,Comprehensive term plan,4700
-Aditya Birla Sun Life Protector Plus,Term Plan,18,65,1900,"Disability, Accidental Death",Pre-existing diseases,Half-yearly,Multiple payout options,4900
-Aviva Life Shield Advantage,Term Plan,18,60,1700,"Return of Premium, Life Cover",Health history,Yearly,Return of premium option,4500
-Exide Life Smart Term Edge,Term Plan,18,60,1650,"Accident Benefit, Maturity Benefit",Age-related exclusions,Quarterly,Maturity benefit term plan,4400
-Future Generali Flexi Online Term Plan,Term Plan,18,65,1800,"Critical Illness, Life Cover",Occupation-related risk,Monthly,Customizable term cover,4700
-Canara HSBC iSelect Smart360 Term Plan,Term Plan,18,65,1850,"Terminal Illness, Accidental Disability",Pre-existing illness,Yearly,Comprehensive term and critical illness,5000
-Edelweiss Tokio Zindagi Protect,Term Plan,18,65,1700,"Life Cover, Top-up Sum Assured",Health check-up,Monthly,Cover with booster options,4600
-Reliance Nippon Life Digi-Term Plan,Term Plan,18,60,1750,Online Term Life,Pre-diagnosed diseases,Half-yearly,Digital term policy with riders,4500
+Insurance Name,Insurance Type,Entry Age Min,Entry Age Max,Sum Assured Min,Sum Assured Max,Premium Min,Premium Max,Requires Medical Exam,Income Criteria,Riders Available,Return of Premium,CSR,Features,Policy Term Range,Life Cover Till Age,Premium Payment Option,Death Benefit Option,Payout Type
+LIC’s Yuva Term,Endowment Plan,18,40,765615,1122023,6918,13208,Yes,₹5L-,Accident Benefit,Yes,92.77,Comprehensive coverage with tax benefits,19-30,76,Regular,Increasing,Lump sum
+LIC’s Yuva Credit Life,Endowment Plan,18,40,669899,879610,14333,16508,No,₹5L-,Premium Waiver,Yes,97.18,Comprehensive coverage with tax benefits,12-38,68,Single,Level,Lump sum
+ICICI Prudential iProtect Smart,Term Plan,18,65,705661,817913,11981,20968,Yes,₹5L+,Premium Waiver,Yes,97.51,Comprehensive coverage with tax benefits,7-32,78,Regular,Level,Installments
+LIC's Bima Jyoti,Endowment Plan,18,60,766967,1057954,19797,22512,Yes,₹5L-,Accident Benefit,Yes,96.3,Comprehensive coverage with tax benefits,11-30,62,Limited,Increasing,Lump sum
+SBI Life eShield,Term Plan,18,65,669888,1083950,9965,10972,Yes,₹5L+,Critical Illness,No,96.36,Comprehensive coverage with tax benefits,19-32,65,Limited,Increasing,Installments
+LIC's New Money Back Plan-25 Years,Endowment Plan,13,45,539240,969388,12792,22172,No,₹5L+,Accident Benefit,No,97.33,Comprehensive coverage with tax benefits,7-26,61,Regular,Level,Installments
+LIC's Amritbaal,Child Plan,0,13,100000,333697,1000,7994,No,Parent income OK,Accident Benefit,Yes,91.28,Comprehensive coverage with tax benefits,9-40,75,Regular,Level,Lump sum
+LIC's Jeevan Labh Plan,Endowment Plan,8,59,662880,937391,6678,7856,No,₹5L-,Critical Illness,No,95.94,Comprehensive coverage with tax benefits,14-38,83,Regular,Increasing,Lump sum
+LIC's New Money Back Plan-20 Years,Endowment Plan,13,50,668225,806827,14366,18624,Yes,₹5L+,Critical Illness,No,96.17,Comprehensive coverage with tax benefits,10-27,68,Regular,Level,Installments
+LIC's New Children's Money Back Plan,Child Plan,0,12,100000,460299,1000,7031,No,Parent income OK,Critical Illness,Yes,95.62,Comprehensive coverage with tax benefits,12-36,76,Limited,Increasing,Installments
+LIC's Jeevan Tarun,Child Plan,0,12,100000,402191,1000,10120,No,Parent income OK,Critical Illness,No,92.77,Comprehensive coverage with tax benefits,8-31,72,Limited,Level,Installments
+Bajaj Allianz Life Smart Protect,ULIP,18,60,722510,829902,17065,23961,No,₹5L+,Critical Illness,Yes,94.24,Comprehensive coverage with tax benefits,17-26,60,Single,Level,Installments
+HDFC Click 2 Protect,ULIP,18,65,847437,1074265,11744,16159,No,₹5L+,Accident Benefit,Yes,90.81,Comprehensive coverage with tax benefits,20-39,74,Regular,Level,Installments
+LIC's New Tech-Term,Endowment Plan,18,65,921767,1357256,7074,15056,No,₹5L-,Accident Benefit,No,91.54,Comprehensive coverage with tax benefits,10-37,83,Limited,Level,Installments
+LIC's Bima Ratna LIC’s Digi Term,Endowment Plan,18,55,648719,1130922,19732,26161,No,₹5L+,Accident Benefit,Yes,93.53,Comprehensive coverage with tax benefits,13-38,64,Regular,Increasing,Lump sum
+Tata AIA Life Insurance,Term Plan,18,65,440563,861377,5990,12413,No,₹5L+,Premium Waiver,Yes,91.93,Comprehensive coverage with tax benefits,8-39,62,Regular,Increasing,Lump sum
+LIC's New Jeevan Amar,Endowment Plan,18,65,749253,934108,19055,24320,No,₹5L+,Accident Benefit,No,92.36,Comprehensive coverage with tax benefits,12-25,83,Regular,Level,Installments
+LIC's Single Premium Endowment Plan,Endowment Plan,8,65,673374,998532,9272,18482,Yes,₹5L+,Critical Illness,Yes,92.13,Comprehensive coverage with tax benefits,11-31,61,Limited,Increasing,Lump sum
+LIC's New Endowment Plan,Endowment Plan,8,60,936272,1332956,18458,22573,No,₹5L+,Critical Illness,No,95.32,Comprehensive coverage with tax benefits,14-38,82,Limited,Level,Lump sum
+LIC’s Digi Credit Life,Endowment Plan,18,60,715707,854949,5282,6417,No,₹5L-,Accident Benefit,No,93.84,Comprehensive coverage with tax benefits,10-35,78,Limited,Level,Lump sum
+LIC's Jeevan Azad LIC’s Bima Shree,Endowment Plan,18,55,665988,1160671,16623,22134,No,₹5L+,Critical Illness,Yes,93.91,Comprehensive coverage with tax benefits,12-37,65,Single,Level,Lump sum
+Max Life Online Term Plan,Endowment Plan,18,60,837506,1047538,16814,17388,No,₹5L+,Accident Benefit,No,95.41,Comprehensive coverage with tax benefits,19-40,72,Single,Increasing,Lump sum
+LIC's New Jeevan Anand,Endowment Plan,18,50,444002,753958,11574,14377,No,₹5L-,Accident Benefit,No,96.38,Comprehensive coverage with tax benefits,8-30,70,Regular,Level,Installments
+LIC's Jeevan Lakshya,Endowment Plan,18,50,754606,992162,13551,22995,No,₹5L+,Premium Waiver,No,98.16,Comprehensive coverage with tax benefits,16-36,73,Limited,Increasing,Installments
