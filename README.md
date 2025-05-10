@@ -139,6 +139,10 @@ No more guesswork. No more manipulation. Just smart insurance decisions.
 
 ---
 
+🔬 Explore our AI models for life insurance prediction: [Insurance Model Repo](https://github.com/Insurance-AI/userplan-synth.git).  
+💸 Dive into smart UPI-based insights: [UPI Analysis Repo](https://github.com/Insurance-AI/UPI_Based_Analysis.git).  
+
+
 ## 🤝 Contributing
 
 Coming soon — we will open contributions for:
