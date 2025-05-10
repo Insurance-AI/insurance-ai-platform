@@ -78,19 +78,19 @@ No more guesswork. No more manipulation. Just smart insurance decisions.
 
 ### 🖥️ Dashboard UI
 
-![Dashboard UI](./assets/dashboard.png)
+![Dashboard UI](./assests/dashboard.png)
 
 ### 📤 Spending analysis
-![Spending analysis](./assets/spending.png)
+![Spending analysis](./assests/spending.png)
 
 ### 📄 Category wise
-![Category wise](./assets/category.png)
+![Category wise](./assests/category.png)
 
 ### 📊 Insurence Recommandation
-![Insurence Recommandation](./assets/insurence_reco.png)
+![Insurence Recommandation](./assests/insurence_reco.png)
 
 ### 💡Summary of analysis
-![Summary of analysis](./assets/summary.png)
+![Summary of analysis](./assests/summary.png)
 
 
 ---
