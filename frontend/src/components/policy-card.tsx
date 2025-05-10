@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
+import { Progress } from "@/components/ui/progress" // Assuming you have a Progress component in your UI lib
 
 // @ts-ignore
 export default function PolicyCard({ policy }) {
@@ -17,6 +18,26 @@ export default function PolicyCard({ policy }) {
                 {Array.isArray(value) ? value.join(", ") : String(value)}
             </p>
         )
+    }
+
+    const renderConfidence = (score: number) => {
+        const percent = Math.min(Math.max(score, 0), 100); 
+
+        const getColor = () => {
+            if (percent >= 80) return "bg-[#C8E0D9]"; 
+            if (percent >= 60) return "bg-[#F4E1C1]"; 
+            return "bg-[#D3B6A0]"; 
+        };
+
+        return (
+            <div>
+                <span className="font-medium">Confidence:</span>{" "}
+                <span className={`${getColor()} text-black px-2 py-1 rounded text-sm`}>
+                    {percent}%
+                </span>
+                <Progress value={percent} className="mt-2 h-2 bg-[#E4D0B2]" />
+            </div>
+        );
     }
 
     return (
@@ -36,7 +57,7 @@ export default function PolicyCard({ policy }) {
                         </Button>
                     </CollapsibleTrigger>
                     <CollapsibleContent className="mt-4 space-y-2">
-                        {renderDetail("Confidence", policy.confidence)}
+                        {renderConfidence(policy.confidence)} {/* Confidence as Progress bar */}
                         {renderDetail("CSR", policy.csr)}
                         {renderDetail("Death Benefit Option", policy.death_benefit_option)}
                         {renderDetail("Features", policy.features)}
