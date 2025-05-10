@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import axios from "axios"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -29,8 +30,8 @@ export default function RecommendationForm() {
     Payout_Type: "",
     Medical_History: "",
     Lifestyle_Habits: "",
-    Interest_in_Optional_Riders: "",
-    Interest_in_Tax_Saving: "",
+    Interest_in_Optional_Riders: false,
+    Interest_in_Tax_Saving: false,
   })
 
   const [showRecommendations, setShowRecommendations] = useState(false)
@@ -48,25 +49,32 @@ export default function RecommendationForm() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const cleanedData = { ...formData }
-
+      // Prepare the data for the server, ensuring correct types for each field
+      const cleanedData = {
+        Age: parseInt(formData.Age, 10),
+        Gender: formData.Gender,
+        Smoking_Status: formData.Smoking_Status,
+        Annual_Income: parseFloat(formData.Annual_Income),
+        Existing_Loans_Debts: formData.Existing_Loans_Debts === "true" ? 1 : 0,
+        Existing_Insurance_Policies: formData.Existing_Insurance_Policies === "true" ? 1 : 0,
+        Desired_Sum_Assured: parseFloat(formData.Desired_Sum_Assured),
+        Policy_Term_Years: parseInt(formData.Policy_Term_Years, 10),
+        Premium_Payment_Option: formData.Premium_Payment_Option,
+        Death_Benefit_Option: formData.Death_Benefit_Option,
+        Payout_Type: formData.Payout_Type,
+        Medical_History: formData.Medical_History,
+        Lifestyle_Habits: formData.Lifestyle_Habits,
+        Interest_in_Optional_Riders: formData.Interest_in_Optional_Riders,
+        Interest_in_Tax_Saving: formData.Interest_in_Tax_Saving,
+      }
       console.log("Sending cleaned data:", cleanedData)
 
-      const res = await fetch("http://localhost:8080/api/recommend", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(cleanedData),
-      })
+      const res = await axios.post("http://localhost:8080/api/recommend", cleanedData)
 
-      if (!res.ok) {
-        throw new Error("Failed to fetch recommendations")
-      }
+      const data = res.data
+      console.log("Received recommendations:", data.recommendations)
 
-      const data = await res.json()
-      console.log("Received recommendations:", data)
-      setRecommendations(data)
+      setRecommendations(data.recommendations || [])
       setShowRecommendations(true)
     } catch (error) {
       console.error("Error fetching recommendations:", error)
@@ -78,114 +86,114 @@ export default function RecommendationForm() {
       <Card className="p-6">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid gap-6 md:grid-cols-2">
-            <InputField
-              label="Age"
-              name="Age"
-              type="number"
-              value={formData.Age}
-              onChange={handleChange}
-              required
+            <InputField 
+                label="Age" 
+                name="Age" 
+                type="number" 
+                value={formData.Age} 
+                onChange={handleChange} 
+                required 
             />
-            <InputField
-              label="Annual Income (USD)"
-              name="Annual_Income"
-              type="number"
-              value={formData.Annual_Income}
-              onChange={handleChange}
-              required
+            <InputField 
+                label="Annual Income (USD)" 
+                name="Annual_Income" 
+                type="number" 
+                value={formData.Annual_Income} 
+                onChange={handleChange} 
+                required 
             />
-            <SelectField
-              label="Existing Loan"
-              name="Existing_Loans_Debts"
-              value={formData.Existing_Loans_Debts}
-              onChange={handleSelectChange}
-              options={["true", "false"]}
+            <SelectField 
+                label="Existing Loan" 
+                name="Existing_Loans_Debts" 
+                value={formData.Existing_Loans_Debts} 
+                onChange={handleSelectChange} 
+                options={["true", "false"]} 
             />
-            <SelectField
-              label="Gender"
-              name="Gender"
-              value={formData.Gender}
-              onChange={handleSelectChange}
-              options={["Male", "Female", "Other"]}
+            <SelectField 
+                label="Gender" 
+                name="Gender" 
+                value={formData.Gender} 
+                onChange={handleSelectChange} 
+                options={["Male", "Female", "Other"]} 
             />
-            <SelectField
-              label="Smoking Status"
-              name="Smoking_Status"
-              value={formData.Smoking_Status}
-              onChange={handleSelectChange}
-              options={["Smoker", "Non-Smoker"]}
+            <SelectField 
+                label="Smoking Status" 
+                name="Smoking_Status" 
+                value={formData.Smoking_Status} 
+                onChange={handleSelectChange} 
+                options={["Smoker", "Non-Smoker"]} 
             />
-            <SelectField
-              label="Existing Insurance Policies"
-              name="Existing_Insurance_Policies"
-              value={formData.Existing_Insurance_Policies}
-              onChange={handleSelectChange}
-              options={["true", "false"]}
+            <SelectField 
+                label="Existing Insurance Policies" 
+                name="Existing_Insurance_Policies" 
+                value={formData.Existing_Insurance_Policies} 
+                onChange={handleSelectChange} 
+                options={["true", "false"]} 
             />
-            <InputField
-              label="Desired Sum Assured"
-              name="Desired_Sum_Assured"
-              type="number"
-              value={formData.Desired_Sum_Assured}
-              onChange={handleChange}
-              required
+            <InputField 
+                label="Desired Sum Assured" 
+                name="Desired_Sum_Assured" 
+                type="number" 
+                value={formData.Desired_Sum_Assured} 
+                onChange={handleChange} 
+                required 
             />
-            <InputField
-              label="Policy Term (Years)"
-              name="Policy_Term_Years"
-              type="number"
-              value={formData.Policy_Term_Years}
-              onChange={handleChange}
-              required
+            <InputField  
+                label="Policy Term (Years)" 
+                name="Policy_Term_Years" 
+                type="number" 
+                value={formData.Policy_Term_Years} 
+                onChange={handleChange} 
+                required 
             />
-            <SelectField
-              label="Premium Payment Option"
-              name="Premium_Payment_Option"
-              value={formData.Premium_Payment_Option}
-              onChange={handleSelectChange}
-              options={["Regular", "Limited", "Single"]}
+            <SelectField 
+                label="Premium Payment Option" 
+                name="Premium_Payment_Option" 
+                value={formData.Premium_Payment_Option} 
+                onChange={handleSelectChange} 
+                options={["Regular", "Limited", "Single"]} 
             />
-            <SelectField
-              label="Death Benefit Option"
-              name="Death_Benefit_Option"
-              value={formData.Death_Benefit_Option}
-              onChange={handleSelectChange}
-              options={["Level", "Increasing"]}
+            <SelectField 
+                label="Death Benefit Option" 
+                name="Death_Benefit_Option" 
+                value={formData.Death_Benefit_Option} 
+                onChange={handleSelectChange} 
+                options={["Level", "Increasing"]} 
             />
-            <SelectField
-              label="Payout Type"
-              name="Payout_Type"
-              value={formData.Payout_Type}
-              onChange={handleSelectChange}
-              options={["Installments", "Lump sum"]}
+            <SelectField 
+                label="Payout Type" 
+                name="Payout_Type" 
+                value={formData.Payout_Type} 
+                onChange={handleSelectChange} 
+                options={["Installments", "Lump sum"]} 
             />
-            <SelectField
-              label="Medical History"
-              name="Medical_History"
-              value={formData.Medical_History}
-              onChange={handleSelectChange}
-              options={["Hypertensive", "Healthy", "Diabetic"]}
+            <SelectField 
+                label="Medical History" 
+                name="Medical_History" 
+                value={formData.Medical_History} 
+                onChange={handleSelectChange} 
+                options={["Hypertensive", "Healthy", "Diabetic"]} 
             />
-            <SelectField
-              label="Lifestyle Habits"
-              name="Lifestyle_Habits"
-              value={formData.Lifestyle_Habits}
-              onChange={handleSelectChange}
-              options={["Active", "Sedentary"]}
+            <SelectField 
+                label="Lifestyle Habits" 
+                name="Lifestyle_Habits" 
+                value={formData.Lifestyle_Habits} 
+                onChange={handleSelectChange} 
+                options={["Active", "Sedentary"]} 
             />
-            <SelectField
-              label="Interested in Optional Riders?"
-              name="Interest_in_Optional_Riders"
-              value={formData.Interest_in_Optional_Riders}
-              onChange={handleSelectChange}
-              options={["true", "false"]}
+            <SelectField 
+                label="Interested in Optional Riders?" 
+                name="Interest_in_Optional_Riders" 
+                value={formData.Interest_in_Optional_Riders} 
+                onChange={handleSelectChange} 
+                options={["true", "false"]} 
             />
-            <SelectField
-              label="Interested in Tax Saving?"
-              name="Interest_in_Tax_Saving"
-              value={formData.Interest_in_Tax_Saving}
-              onChange={handleSelectChange}
-              options={["true", "false"]}
+            <SelectField 
+                label="Interested in Tax Saving?" 
+                name="Interest_in_Tax_Saving" 
+                value={formData.Interest_in_Tax_Saving} 
+                onChange={handleSelectChange} 
+                options={["true", "false"]} 
             />
           </div>
 

@@ -23,6 +23,7 @@ app = FastAPI(
     version="1.0.0"
 )
 
+
 # Root
 @app.get("/")
 async def root():
@@ -34,6 +35,7 @@ async def root():
             "/predict": "Submit user data to get insurance plan recommendations"
         }
     }
+
 
 # Transaction Analysis Endpoint
 @app.post("/analyze", response_model=AnalysisResponse)
@@ -61,6 +63,7 @@ async def predict_plan(data: InsuranceRequest):
     except Exception as e:
         logger.error(f"Prediction error: {e}")
         raise HTTPException(status_code=500, detail=f"Prediction error: {e}")
+
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)

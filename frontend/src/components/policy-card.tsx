@@ -100,7 +100,7 @@ export default function PolicyCard({ policy }) {
     return (
         <Card className="h-full">
             <CardHeader>
-                <CardTitle>{policy.insuranceName}</CardTitle>
+                <CardTitle>{policy.plan}</CardTitle>
             </CardHeader>
             <CardFooter>
                 <Collapsible open={isOpen} onOpenChange={setIsOpen} className="w-full">
@@ -111,7 +111,7 @@ export default function PolicyCard({ policy }) {
                     </CollapsibleTrigger>
                     <CollapsibleContent className="mt-4 space-y-2">
                         <p>
-                            <span className="font-medium">Plan:</span> {policy.insuranceName}
+                            <span className="font-medium">Plan:</span> {policy.plan}
                         </p>
                         {policy.confidence && (
                             <p>

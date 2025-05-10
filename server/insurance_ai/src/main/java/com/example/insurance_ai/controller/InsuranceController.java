@@ -4,10 +4,7 @@ import com.example.insurance_ai.dto.InsuranceRequest;
 import com.example.insurance_ai.dto.InsuranceResponse;
 import com.example.insurance_ai.service.InsuranceService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
@@ -18,6 +15,7 @@ public class InsuranceController {
         this.insuranceService = insuranceService;
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("/recommend")
     public ResponseEntity<InsuranceResponse> recommend(@RequestBody InsuranceRequest request) {
         InsuranceResponse response = insuranceService.getRecommendations(request);
