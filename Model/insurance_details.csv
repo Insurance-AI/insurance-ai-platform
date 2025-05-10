@@ -1,0 +1,35 @@
+Plan Name,Plan Type,Min Age,Max Age,Premium,Coverage,Exclusions,Payment Frequency,Description,Min Income
+LIC's Single Premium Endowment Plan,Endowment Plan,8,65,1500,"Hospitalization, Critical Illness",Accidents,Yearly,Single premium payment option,5000
+LIC's New Endowment Plan,Endowment Plan,8,60,1200,"Life Cover, Disability",Chronic Illness,Yearly,Endowment with life cover,4000
+LIC's New Jeevan Anand,Endowment Plan,18,50,1800,"Life Cover, Accident",Pre-existing conditions,Quarterly,Combination of endowment and life cover,4500
+LIC's Jeevan Lakshya,Endowment Plan,18,50,1700,Education Benefit,Lifestyle diseases,Quarterly,Supports education expenses,4000
+LIC's Jeevan Labh Plan,Endowment Plan,8,59,1600,Death Benefit,None,Half-yearly,Limited premium payment,4200
+LIC's Amritbaal,Child Plan,0,13,800,Child Education,Age restriction,Yearly,Secure child's future,3000
+LIC's Bima Jyoti,Endowment Plan,18,60,1900,Guaranteed Additions,None,Yearly,Guaranteed benefits,4800
+LIC's Jeevan Azad,Endowment Plan,18,55,1700,Survival Benefit,Lifestyle diseases,Quarterly,Flexibility in cover,4200
+LIC's New Money Back Plan-20 Years,Endowment Plan,13,50,1600,Survival Benefit,Critical Illness,Half-yearly,Money back plan,3900
+LIC's New Money Back Plan-25 Years,Endowment Plan,13,45,1650,Maturity Benefit,Chronic Illness,Yearly,25-year tenure plan,4000
+LIC's New Children's Money Back Plan,Child Plan,0,12,900,Child Marriage/Education,Eligibility age,Half-yearly,Child-oriented,3200
+LIC's Jeevan Tarun,Child Plan,0,12,950,Child Education,Age limit,Yearly,Education-focused,3100
+LIC's Bima Ratna,Endowment Plan,18,55,1750,Death & Maturity Benefit,Lifestyle diseases,Yearly,Combined benefit,4500
+LIC’s Digi Credit Life,Endowment Plan,18,60,2000,Loan Protection,Credit defaults,Monthly,Digital term plan,5000
+LIC’s Yuva Credit Life,Endowment Plan,18,40,1500,Youth Cover,Employment Status,Monthly,Young adult cover,3500
+LIC’s Yuva Term,Term Plan,18,40,1400,Life Cover,Health issues,Quarterly,Basic term life,3000
+LIC's New Tech-Term,Term Plan,18,65,1600,Term Cover,Pre-existing conditions,Monthly,Technology-supported term plan,4500
+LIC's New Jeevan Amar,Term Plan,18,65,1550,Comprehensive Cover,None,Half-yearly,Flexible term plan,4400
+HDFC Click 2 Protect,ULIP,18,65,2000,"Critical Illness, Life Cover",Pre-existing conditions,Quarterly,Life cover with critical illness benefits,6000
+SBI Life eShield,Term Plan,18,65,1800,Life Cover,Accidents,Yearly,Term plan for young professionals,5000
+Max Life Online Term Plan,Endowment Plan,18,60,1750,"Maturity, Disability",None,Half-yearly,Online purchase option,4700
+ICICI Prudential iProtect Smart,Term Plan,18,65,1900,"Critical Illness, Terminal Illness",Pre-existing conditions,Quarterly,Smart protection,5800
+Bajaj Allianz Life Smart Protect,ULIP,18,60,1850,Life & Investment,Stock Market Risk,Monthly,ULIP with smart features,5500
+Tata AIA Life Insurance,Term Plan,18,65,1700,Term + Accidental,Chronic diseases,Monthly,Accident + term insurance,5200
+PNB MetLife Mera Term Plan Plus,Term Plan,18,65,1850,"Terminal Illness, Accidental Death",Lifestyle habits,Yearly,Flexible term cover with riders,4800
+Bharti AXA Life Flexi Term,Term Plan,18,65,1750,"Life Cover, Critical Illness",Smoking history,Quarterly,Term cover with income payout,4600
+Kotak e-Term Plan,Term Plan,18,65,1800,"Death Benefit, Critical Illness",Medical conditions,Monthly,Comprehensive term plan,4700
+Aditya Birla Sun Life Protector Plus,Term Plan,18,65,1900,"Disability, Accidental Death",Pre-existing diseases,Half-yearly,Multiple payout options,4900
+Aviva Life Shield Advantage,Term Plan,18,60,1700,"Return of Premium, Life Cover",Health history,Yearly,Return of premium option,4500
+Exide Life Smart Term Edge,Term Plan,18,60,1650,"Accident Benefit, Maturity Benefit",Age-related exclusions,Quarterly,Maturity benefit term plan,4400
+Future Generali Flexi Online Term Plan,Term Plan,18,65,1800,"Critical Illness, Life Cover",Occupation-related risk,Monthly,Customizable term cover,4700
+Canara HSBC iSelect Smart360 Term Plan,Term Plan,18,65,1850,"Terminal Illness, Accidental Disability",Pre-existing illness,Yearly,Comprehensive term and critical illness,5000
+Edelweiss Tokio Zindagi Protect,Term Plan,18,65,1700,"Life Cover, Top-up Sum Assured",Health check-up,Monthly,Cover with booster options,4600
+Reliance Nippon Life Digi-Term Plan,Term Plan,18,60,1750,Online Term Life,Pre-diagnosed diseases,Half-yearly,Digital term policy with riders,4500
