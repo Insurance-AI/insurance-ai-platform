@@ -86,17 +86,32 @@ No more guesswork. No more manipulation. Just smart insurance decisions.
 ### 📄 Category wise
 ![Category wise](./assests/category.png)
 
-### 📊 Insurence Recommandation
-![Insurence Recommandation](./assests/insurence_reco.png)
-
 ### 💡Summary of analysis
 ![Summary of analysis](./assests/summary.png)
 
-### 💡form assesment for life insurence 
-![life_ins](./assests/form.png)
+### 📊 Insurence Recommandation
+![Insurence Recommandation](./assests/insurence_reco.png)
 
-### 💡details how it works
-![details](./assests/life_ins.png)
+### 📝 Life Insurance Assessment Form
+
+![Assessment Form](https://github.com/user-attachments/assets/ae843fdf-e738-43b7-b4d4-5f84c1fa728d)
+
+
+### 📋 Recommended Policies
+
+
+![Recommended Policies](https://github.com/user-attachments/assets/ac14b534-7963-421f-81c5-515f3a692503)
+
+
+### 🔍 Plan Analysis
+
+![Plan Analysis](https://github.com/user-attachments/assets/50e68e1b-5c64-4d5e-8647-11b4e8fad513)
+
+
+### 📊 Tabular Comparison of Plans
+
+![Tabular Comparison](https://github.com/user-attachments/assets/db7eec75-f544-40f7-8ac1-cbb569528d64)
+
 
 ---
 
