@@ -76,7 +76,7 @@ export default function InsuranceAnalysisDashboard() {
 
   // In case of error, provide option to go back to upload
   const handleReturnToUpload = () => {
-    router.push("/upload");
+    router.push("/recommendations");
   };
 
   if (loading) {
