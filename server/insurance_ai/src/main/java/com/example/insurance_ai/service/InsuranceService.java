@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class InsuranceService {
     private final RestTemplate restTemplate = new RestTemplate();
-    private static final String FASTAPI_URL = "http://localhost:8000/predict";
+    private static final String FASTAPI_URL = "http://127.0.0.1:8000/predict";
 
     public InsuranceResponse getRecommendations(InsuranceRequest request) {
         HttpHeaders headers = new HttpHeaders();
