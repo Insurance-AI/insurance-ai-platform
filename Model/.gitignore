@@ -1,0 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Test and coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# FastAPI specific (if using Uvicorn or similar)
+*.log
+*.pid
+
+# Pytest cache
+.pytest_cache/
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebooks (optional)
+.ipynb_checkpoints
+
+# MyPy and Pylint
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# Environments
+.env
+.env.*
+*.env
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# OS files
+.DS_Store
+Thumbs.db
