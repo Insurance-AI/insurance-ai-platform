@@ -92,6 +92,11 @@ No more guesswork. No more manipulation. Just smart insurance decisions.
 ### 💡Summary of analysis
 ![Summary of analysis](./assests/summary.png)
 
+### 💡form assesment for life insurence 
+![life_ins](./assests/form.png)
+
+### 💡details how it works
+![details](./assests/life_ins.png)
 
 ---
 
