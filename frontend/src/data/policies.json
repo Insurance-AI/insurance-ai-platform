@@ -1,0 +1,104 @@
+{
+  "insurance_plans": [
+    {
+      "insurance_name": "LIC's Single Premium Endowment Plan",
+      "insurance_type": "Endowment Plan",
+      "entry_age_min": 8,
+      "entry_age_max": 65,
+      "sum_assured_min": 1500,
+      "key_benefits_or_riders": ["Hospitalization", "Critical Illness"],
+      "medical_considerations": "Accidents",
+      "premium_payment_option": "Yearly",
+      "features_description": "Single premium payment option",
+      "sample_premium": 5000
+    },
+    {
+      "insurance_name": "LIC's New Endowment Plan",
+      "insurance_type": "Endowment Plan",
+      "entry_age_min": 8,
+      "entry_age_max": 60,
+      "sum_assured_min": 1200,
+      "key_benefits_or_riders": ["Life Cover", "Disability"],
+      "medical_considerations": "Chronic Illness",
+      "premium_payment_option": "Yearly",
+      "features_description": "Endowment with life cover",
+      "sample_premium": 4000
+    },
+    {
+      "insurance_name": "LIC's New Jeevan Anand",
+      "insurance_type": "Endowment Plan",
+      "entry_age_min": 18,
+      "entry_age_max": 50,
+      "sum_assured_min": 1800,
+      "key_benefits_or_riders": ["Life Cover", "Accident"],
+      "medical_considerations": "Pre-existing conditions",
+      "premium_payment_option": "Quarterly",
+      "features_description": "Combination of endowment and life cover",
+      "sample_premium": 4500
+    },
+    {
+      "insurance_name": "LIC's Jeevan Lakshya",
+      "insurance_type": "Endowment Plan",
+      "entry_age_min": 18,
+      "entry_age_max": 50,
+      "sum_assured_min": 1700,
+      "key_benefits_or_riders": ["Education Benefit"],
+      "medical_considerations": "Lifestyle diseases",
+      "premium_payment_option": "Quarterly",
+      "features_description": "Supports education expenses",
+      "sample_premium": 4000
+    },
+    {
+      "insurance_name": "LIC's Jeevan Labh Plan",
+      "insurance_type": "Endowment Plan",
+      "entry_age_min": 8,
+      "entry_age_max": 59,
+      "sum_assured_min": 1600,
+      "key_benefits_or_riders": ["Death Benefit"],
+      "medical_considerations": "None",
+      "premium_payment_option": "Half-yearly",
+      "features_description": "Limited premium payment",
+      "sample_premium": 4200
+    }
+  ],
+  "comparison_summary": {
+    "insurance_types": "All 5 plans are 'Endowment Plan' type.",
+    "entry_age_range": {
+      "overall_min_age": "8 years (Single Premium Endowment, New Endowment, Jeevan Labh).",
+      "overall_max_age": "65 years (Single Premium Endowment).",
+      "adult_focused_start": "18 years (New Jeevan Anand, Jeevan Lakshya).",
+      "common_max_entry_age_bracket": "50-65 years."
+    },
+    "minimum_sum_assured_comparison": {
+      "lowest": "₹1200 (LIC's New Endowment Plan).",
+      "highest": "₹1800 (LIC's New Jeevan Anand).",
+      "range": "All plans have very low minimum sum assureds, ranging from ₹1200 to ₹1800.",
+      "implication": "These low sum assureds significantly impact the perceived value if these are the actual coverage amounts. Currency unit assumed as Rupees."
+    },
+    "key_benefit_focus": {
+      "life_protection_core": "Life Cover (New Endowment, New Jeevan Anand), Death Benefit (Jeevan Labh).",
+      "health_and_event_riders": "Hospitalization, Critical Illness (Single Premium Endowment), Disability (New Endowment), Accident (New Jeevan Anand).",
+      "specific_goal": "Education Benefit (Jeevan Lakshya)."
+    },
+    "medical_considerations_patterns": {
+      "specific_conditions": "Chronic Illness (New Endowment), Pre-existing conditions (New Jeevan Anand), Lifestyle diseases (Jeevan Lakshya).",
+      "event_based": "Accidents (Single Premium Endowment).",
+      "none_specified": "LIC's Jeevan Labh."
+    },
+    "premium_payment_options": {
+      "yearly": "Single Premium Endowment (note: description suggests single pay, data shows yearly), New Endowment Plan.",
+      "quarterly": "New Jeevan Anand, Jeevan Lakshya.",
+      "half_yearly": "Jeevan Labh Plan."
+    },
+    "distinctive_features": {
+      "single_premium_intent": "LIC's Single Premium Endowment Plan (as per description).",
+      "combination_cover": "LIC's New Jeevan Anand (endowment and life cover).",
+      "education_focus": "LIC's Jeevan Lakshya.",
+      "limited_premium_term_focus": "LIC's Jeevan Labh Plan."
+    },
+    "sample_premium_observations": {
+      "range": "From ₹4000 to ₹5000.",
+      "relative_to_sum_assured": "Premiums are consistently much higher than the minimum sum assured values (e.g., ₹4000 premium for ₹1200 sum assured). This ratio may warrant clarification of the data for practical understanding."
+    }
+  }
+}
