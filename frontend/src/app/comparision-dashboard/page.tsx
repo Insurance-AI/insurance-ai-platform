@@ -1,6 +1,8 @@
-import policiesData from '@/data/policies.json'; // Adjust path if needed
+'use client';
 
-// Define types for better autocompletion and safety (same as before)
+import { useSearchParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
+
 interface Policy {
     insurance_name: string;
     insurance_type: string;
@@ -14,7 +16,6 @@ interface Policy {
     features_description: string;
     sample_premium: number;
     sample_premium_note?: string;
-    // Add other fields from your 32-column list if they exist in the JSON
 }
 
 interface PoliciesData {
@@ -25,10 +26,51 @@ interface PoliciesData {
     };
 }
 
-const typedPoliciesData: PoliciesData = policiesData as PoliciesData;
-
 const ComparisonDashboardPage = () => {
-    const { insurance_plans, comparison_summary } = typedPoliciesData;
+    const searchParams = useSearchParams();
+    const result = searchParams.get('result');
+    const [data, setData] = useState<PoliciesData | null>(null);
+
+    useEffect(() => {
+        let parsed: PoliciesData | null = null;
+
+        // Try parsing from URL parameter
+        if (typeof result === 'string') {
+            try {
+                parsed = JSON.parse(result);
+            } catch (error) {
+                console.error('Invalid result format:', error);
+            }
+        }
+
+        // If parsing from URL fails or is not present, fallback to localStorage
+        if (!parsed) {
+            const storedData = localStorage.getItem('comparison_result');
+            if (storedData) {
+                try {
+                    const parsedStored = JSON.parse(storedData);
+                    if (parsedStored?.policies) {
+                        parsed = {
+                            insurance_plans: parsedStored.policies,
+                            comparison_summary: parsedStored.comparison_summary || { notes: [] }
+                        };
+                    }
+                } catch (error) {
+                    console.error('Error parsing localStorage data:', error);
+                }
+            }
+        }
+
+        if (parsed) {
+            setData(parsed);
+        }
+    }, [result]);
+
+    if (!data) {
+        return <p className="p-4 text-center text-gray-600">Loading comparison data...</p>;
+    }
+
+    const { insurance_plans, comparison_summary } = data;
 
     if (!insurance_plans || insurance_plans.length === 0) {
         return <p className="p-4 text-center text-gray-600">No insurance plan data available.</p>;
@@ -49,12 +91,8 @@ const ComparisonDashboardPage = () => {
 
     const renderCellValue = (policy: Policy, attributeKey: keyof Policy) => {
         const value = policy[attributeKey];
-        if (Array.isArray(value)) {
-            return value.join(', ');
-        }
-        if (value === undefined || value === null) {
-            return <span className="text-gray-500">N/A</span>;
-        }
+        if (Array.isArray(value)) return value.join(', ');
+        if (value === undefined || value === null) return <span className="text-gray-500">N/A</span>;
         return String(value);
     };
 
@@ -67,43 +105,36 @@ const ComparisonDashboardPage = () => {
             <div className="overflow-x-auto shadow-md rounded-lg border border-gray-200">
                 <table className="min-w-full divide-y divide-gray-200">
                     <thead className="bg-gray-100">
-                    <tr>
-                        <th
-                            scope="col"
-                            className="sticky left-0 z-10 bg-gray-100 px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider border-r border-gray-300"
-                        >
-                            Feature
-                        </th>
-                        {insurance_plans.map((plan) => (
-                            <th
-                                key={plan.insurance_name}
-                                scope="col"
-                                className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider whitespace-nowrap"
-                            >
-                                {plan.insurance_name}
+                        <tr>
+                            <th className="sticky left-0 z-10 bg-gray-100 px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider border-r border-gray-300">
+                                Feature
                             </th>
-                        ))}
-                    </tr>
-                    </thead>
-                    <tbody className="bg-white divide-y divide-gray-200">
-                    {attributesToShow.map((attr) => (
-                        <tr key={attr.key} className="hover:bg-gray-50">
-                            <td className="sticky left-0 z-10 bg-white hover:bg-gray-50 px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 border-r border-gray-300">
-                                {attr.label}
-                            </td>
                             {insurance_plans.map((plan) => (
-                                <td key={`${plan.insurance_name}-${attr.key}`} className="px-6 py-4 whitespace-normal text-sm text-gray-700">
-                                    {renderCellValue(plan, attr.key)}
-                                    {attr.key === 'sum_assured_min' && plan.sum_assured_unit_note && (
-                                        <small className="block text-xs text-gray-500 mt-1">({plan.sum_assured_unit_note})</small>
-                                    )}
-                                    {attr.key === 'sample_premium' && plan.sample_premium_note && (
-                                        <small className="block text-xs text-gray-500 mt-1">({plan.sample_premium_note})</small>
-                                    )}
-                                </td>
+                                <th key={plan.insurance_name} className="px-6 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider whitespace-nowrap">
+                                    {plan.insurance_name}
+                                </th>
                             ))}
                         </tr>
-                    ))}
+                    </thead>
+                    <tbody className="bg-white divide-y divide-gray-200">
+                        {attributesToShow.map((attr) => (
+                            <tr key={attr.key} className="hover:bg-gray-50">
+                                <td className="sticky left-0 z-10 bg-white hover:bg-gray-50 px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 border-r border-gray-300">
+                                    {attr.label}
+                                </td>
+                                {insurance_plans.map((plan) => (
+                                    <td key={`${plan.insurance_name}-${attr.key}`} className="px-6 py-4 whitespace-normal text-sm text-gray-700">
+                                        {renderCellValue(plan, attr.key)}
+                                        {attr.key === 'sum_assured_min' && plan.sum_assured_unit_note && (
+                                            <small className="block text-xs text-gray-500 mt-1">({plan.sum_assured_unit_note})</small>
+                                        )}
+                                        {attr.key === 'sample_premium' && plan.sample_premium_note && (
+                                            <small className="block text-xs text-gray-500 mt-1">({plan.sample_premium_note})</small>
+                                        )}
+                                    </td>
+                                ))}
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
             </div>
@@ -124,7 +155,6 @@ const ComparisonDashboardPage = () => {
 
                     {Object.entries(comparison_summary).map(([key, value]) => {
                         if (key === 'notes') return null;
-
                         const title = key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 
                         if (typeof value === 'object' && value !== null && !Array.isArray(value)) {
