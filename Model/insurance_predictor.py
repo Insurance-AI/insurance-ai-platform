@@ -55,11 +55,11 @@ def recommend(data: dict):
 
     X_new = df[features].astype(float)
     probs = model.predict_proba(X_new)[0]
-    top3_indices = np.argsort(probs)[::-1][:3]
-    top3_labels = target_encoder.inverse_transform(top3_indices)
-    top3_probs = probs[top3_indices]
+    top10_indices = np.argsort(probs)[::-1][:10]
+    top10_labels = target_encoder.inverse_transform(top10_indices)
+    top10_probs = probs[top10_indices]
 
     return [
         {"plan": plan, "confidence": round(float(prob), 4)}
-        for plan, prob in zip(top3_labels, top3_probs)
+        for plan, prob in zip(top10_labels, top10_probs)
     ]

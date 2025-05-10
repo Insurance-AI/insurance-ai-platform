@@ -4,6 +4,9 @@ from fastapi.responses import JSONResponse
 import uvicorn
 from io import StringIO
 import logging
+from fastapi.logger import logger
+import pandas as pd
+import numpy as np
 
 from financial_analyzer import process_transactions
 from insurance_predictor import recommend
@@ -22,6 +25,8 @@ app = FastAPI(
     description="Analyze transactions and recommend insurance plans",
     version="1.0.0"
 )
+
+insurance_details = pd.read_csv("insurance_details.csv")
 
 
 # Root
@@ -57,9 +62,43 @@ async def analyze_transactions(file: UploadFile = File(...)):
 async def predict_plan(data: InsuranceRequest):
     try:
         logger.info("Received insurance prediction request")
+
         recommendations = recommend(data.dict())
-        print(recommendations)
-        return {"recommendations": recommendations}
+
+        # print("Raw recommendations:", recommendations)
+
+        valid_plans = []
+        user_data = data.dict()
+        user_age = user_data['Age']
+        user_income = user_data['Annual_Income']
+        user_premium = user_data['Desired_Sum_Assured']
+
+        for rec in recommendations:
+            plan_name = rec['plan']
+            match = insurance_details[insurance_details['Plan Name'] == plan_name]
+
+            if match.empty:
+                continue 
+
+            plan = match.iloc[0]
+            min_age = int(plan['Min Age'])
+            max_age = int(plan['Max Age'])
+
+            if (
+                min_age <= user_age <= max_age
+            ):
+                valid_plans.append({
+                    "plan": plan_name,
+                    "confidence": rec['confidence'],
+                    "type": plan['Plan Type'],
+                    "description": plan['Description'],
+                    "coverage": plan['Coverage'],
+                    "exclusions": plan['Exclusions'],
+                    "payment_frequency": plan['Payment Frequency']
+                })
+
+        return {"recommendations": valid_plans}
+
     except Exception as e:
         logger.error(f"Prediction error: {e}")
         raise HTTPException(status_code=500, detail=f"Prediction error: {e}")
