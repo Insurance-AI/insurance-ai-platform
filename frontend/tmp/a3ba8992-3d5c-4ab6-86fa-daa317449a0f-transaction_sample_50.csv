@@ -1,0 +1,51 @@
+Date,Remark,RefNo,ValueDate,Withdrawal,Deposit,Balance,Category
+1/1/2025,Taxi fare - Uber,REF618647,2/1/2025,66.8,,293644.6,Transportation
+26/03/2024,Car service and maintenance,REF365514,26/03/2024,28.53,,99912.47,Transportation
+11/1/2025,Highway toll payment,REF598077,12/1/2025,39.33,,295665.44,Transportation
+27/05/2024,Business trip insurance coverage,REF331467,27/05/2024,259.32,,126644.16,Insurance-Travel
+10/4/2024,Landline phone bill payment,REF146659,11/4/2024,265.74,,100999.98,Bills
+8/2/2025,Dividend received from AXA,REF986683,10/2/2025,,354.0,308126.68,Investment-Dividend received from {company}
+15/01/2025,Monthly salary from XYZ Industries,REF851725,15/01/2025,6857.46,,287397.35,Salary
+2/5/2024,Property insurance renewal,REF470988,4/5/2024,327.92,,116359.66,Insurance-Home
+20/03/2024,Family health plan premium,REF455959,20/03/2024,181.0,,102150.65,Insurance-Health
+29/03/2025,Fixed deposit creation,REF835528,29/03/2025,3970.8,,372586.19,Investment
+15/01/2024,Monthly salary from National Services,REF893701,17/01/2024,,3571.97,45691.85,Salary
+3/7/2024,Doctor's consultation fee - Dr. Smith,REF693865,4/7/2024,518.36,,162588.14,Healthcare
+16/02/2025,Mutual fund investment - PIMCO Income Fund,REF365185,17/02/2025,,2706.93,317955.88,Investment
+1/4/2024,Bonus payment - Jan-Mar 2024,REF247547,2/4/2024,5137.43,,92326.33,Salary
+9/1/2025,Life insurance installment #12 of 48,REF470457,9/1/2025,870.8,,289832.47,Insurance-Life
+29/01/2025,Health coverage renewal #POL97746,REF912616,31/01/2025,323.34,,305394.36,Insurance-Health
+27/04/2025,Bonus payment - Jul-Sep 2024,REF279619,28/04/2025,7333.94,,405233.02,Salary
+12/2/2024,Contract payment - Design Work,REF909275,12/2/2024,,6785.87,62977.54,Salary
+15/11/2024,Bonus payment - Jan-Mar 2024,REF429481,15/11/2024,,7276.95,270970.2,Salary
+18/02/2025,Bond purchase - International,REF801343,18/02/2025,2087.7,,322773.08,Investment
+25/04/2025,Monthly salary from Global Solutions,REF254814,27/04/2025,,7076.43,408662.0,Salary
+26/04/2025,Breakfast at Chipotle,REF650549,26/04/2025,131.06,,408530.94,Dining
+30/09/2024,Holiday insurance package,REF716014,1/10/2024,171.18,,239701.28,Insurance-Travel
+25/12/2024,Monthly salary from Tech Innovations,REF621174,27/12/2024,,7344.08,293913.77,Salary
+29/03/2024,Retirement fund contribution,REF876046,31/03/2024,1035.81,,94081.43,Investment
+6/4/2025,Monthly salary from ABC Corporation,REF509247,7/4/2025,,4430.49,381149.97,Salary
+28/04/2025,Auto insurance renewal - policy #POL24410,REF987577,28/04/2025,409.54,,411725.57,Insurance-Motor
+19/07/2024,Bonus payment - Apr-Jun 2024,REF783250,19/07/2024,,3455.77,189885.72,Salary
+8/4/2024,Two-wheeler insurance for Kawasaki Ninja,REF896763,8/4/2024,274.27,,99842.0,Insurance-Motor
+3/12/2024,Dividend received from Aviva,REF162281,4/12/2024,,148.61,283050.72,Investment-Dividend received from {company}
+17/04/2025,Dinner at TGI Fridays,REF398248,17/04/2025,169.06,,392389.21,Dining
+4/12/2024,International travel coverage plan,REF775457,5/12/2024,177.33,,282742.2,Insurance-Travel
+22/03/2025,Bond purchase - Corporate,REF439478,24/03/2025,,1561.63,375917.08,Investment
+12/6/2024,Pharmacy purchase at Walgreens,REF268339,14/06/2024,488.85,,139789.75,Healthcare
+7/1/2024,Bond purchase - Municipal,REF648378,8/1/2024,3901.16,,45641.91,Investment
+1/12/2024,Purchase at Target - clothing,REF545369,2/12/2024,125.64,,282902.11,Shopping
+21/02/2025,Vehicle insurance payment for Oct-Dec 2024,REF689899,21/02/2025,218.33,,322554.75,Insurance-Motor
+22/03/2024,Annual renewal of life insurance with Liberty,REF251884,23/03/2024,134.66,,101349.14,Insurance-Life
+17/07/2024,Annual renewal of life insurance with MetLife,REF121322,18/07/2024,431.53,,179263.7,Insurance-Life
+14/03/2024,Stock purchase - META,REF671744,15/03/2024,2501.73,,90149.52,Investment
+23/01/2025,Home contents insurance premium,REF119448,24/01/2025,176.62,,295239.89,Insurance-Home
+5/4/2024,Mutual fund investment - PIMCO Income Fund,REF681202,5/4/2024,2129.32,,98916.94,Investment
+22/04/2025,Auto insurance renewal - policy #POL77109,REF493623,22/04/2025,432.11,,403927.56,Insurance-Motor
+20/06/2024,Stock purchase - PG,REF614110,20/06/2024,,1920.27,150397.86,Investment
+16/02/2024,Stock purchase - GOOGL,REF758064,18/02/2024,,420.76,63053.44,Investment-Dividend received from {company}
+30/03/2024,Retirement fund contribution,REF289822,1/4/2024,,4396.29,98477.72,Investment
+2/1/2024,Educational workshop fee - Web Development,REF575163,2/1/2024,356.4,,49643.6,Education
+18/01/2024,Overtime payment,REF945164,20/01/2024,4850.86,,47082.56,Salary
+25/02/2025,Home insurance premium - property at 101 Maple Dr,REF366651,26/02/2025,297.96,,324883.32,Insurance-Home
+30/01/2024,Commission payment,REF762720,30/01/2024,2592.33,,54673.4,Salary

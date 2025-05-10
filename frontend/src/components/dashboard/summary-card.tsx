@@ -1,37 +1,80 @@
 "use client";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { TransactionAnalysis } from "@/lib/types";
 import { formatCurrency } from "@/lib/utils";
 import { DollarSign, CreditCard, Calendar, TrendingUp } from "lucide-react";
 
 interface SummaryCardProps {
-  data: TransactionAnalysis;
+  data: {
+    summary: string;
+  };
 }
 
 export default function SummaryCard({ data }: SummaryCardProps) {
+  // Parse relevant information from the summary string
+  const summaryText = data.summary;
+  
+  // Extract total spending - make it case insensitive and look for numbers with or without decimals
+  const totalSpendingMatch = summaryText.match(/total spending of (\d+(?:\.\d+)?)/i);
+  const totalSpending = totalSpendingMatch ? parseFloat(totalSpendingMatch[1]) : 0;
+  
+  // Extract transaction count
+  const transactionCountMatch = summaryText.match(/Analyzed (\d+) transactions/i);
+  const transactionCount = transactionCountMatch ? parseInt(transactionCountMatch[1]) : 0;
+  
+  // Extract monthly average spending
+  const monthlyAvgMatch = summaryText.match(/Average Monthly Spending: (\d+(?:\.\d+)?)/i);
+  const monthlyAvgSpending = monthlyAvgMatch ? parseFloat(monthlyAvgMatch[1]) : 0;
+  
+  // Extract budget recommendation
+  const budgetMatch = summaryText.match(/monthly budget of (\d+(?:\.\d+)?)/i);
+  const budgetRecommendation = budgetMatch ? parseFloat(budgetMatch[1]) : 0;
+  
+  // Log the extracted values for debugging
+  console.log({
+    totalSpending,
+    transactionCount,
+    monthlyAvgSpending,
+    budgetRecommendation,
+    summaryText: summaryText.substring(0, 100) // Log first 100 chars of summary
+  });
+
+  // Define a safe currency formatter to avoid the maximumFractionDigits error
+  const safeFormatCurrency = (value: number) => {
+    try {
+      return formatCurrency(value);
+    } catch (error) {
+      // Fallback to a simple formatter if the built-in formatter fails
+      return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        maximumFractionDigits: 2
+      }).format(value);
+    }
+  };
+
   const statItems = [
     {
       title: "Transactions",
-      value: data.transaction_count.toLocaleString(),
+      value: transactionCount.toLocaleString(),
       description: "Total analyzed",
       icon: <CreditCard className="h-4 w-4 text-blue-500" />,
     },
     {
       title: "Total Spending",
-      value: formatCurrency(data.total_spending),
+      value: safeFormatCurrency(totalSpending),
       description: "All transactions",
       icon: <DollarSign className="h-4 w-4 text-green-500" />,
     },
     {
       title: "Monthly Average",
-      value: formatCurrency(data.financial_advice.avg_monthly_spending),
+      value: safeFormatCurrency(monthlyAvgSpending),
       description: "Average per month",
       icon: <Calendar className="h-4 w-4 text-purple-500" />,
     },
     {
       title: "Recommended Budget",
-      value: formatCurrency(data.financial_advice.budget_recommendation),
+      value: safeFormatCurrency(budgetRecommendation),
       description: "Monthly target",
       icon: <TrendingUp className="h-4 w-4 text-orange-500" />,
     },

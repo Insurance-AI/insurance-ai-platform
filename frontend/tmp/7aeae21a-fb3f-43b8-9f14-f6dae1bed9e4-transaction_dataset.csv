@@ -1,0 +1,501 @@
+Date,Remark,RefNo,ValueDate,Withdrawal,Deposit,Balance,Category
+2/1/2024,Educational workshop fee - Web Development,REF575163,2/1/2024,356.4,,49643.6,Education
+6/1/2024,Property insurance renewal,REF165310,6/1/2024,100.53,,49543.07,Insurance-Home
+7/1/2024,Bond purchase - Municipal,REF648378,8/1/2024,3901.16,,45641.91,Investment
+8/1/2024,Fixed deposit creation,REF125765,8/1/2024,,240.9,45882.81,Investment-Dividend received from {company}
+9/1/2024,Mutual fund investment - PIMCO Income Fund,REF365929,11/1/2024,953.81,,44929,Investment
+9/1/2024,Movie tickets at IMAX,REF989510,9/1/2024,93.76,,44835.24,Entertainment
+12/1/2024,Family health plan premium,REF361858,13/01/2024,750.49,,44084.75,Insurance-Health
+14/01/2024,Contract payment - Design Work,REF595905,14/01/2024,,2778.95,46863.7,Salary
+15/01/2024,Contract payment - Training Program,REF487025,16/01/2024,4743.82,,42119.88,Salary
+15/01/2024,Monthly salary from National Services,REF893701,17/01/2024,,3571.97,45691.85,Salary
+16/01/2024,Overtime payment,REF249522,17/01/2024,,6241.57,51933.42,Salary
+18/01/2024,Overtime payment,REF945164,20/01/2024,4850.86,,47082.56,Salary
+19/01/2024,Dinner at Chili's,REF142446,20/01/2024,70.83,,47011.73,Dining
+20/01/2024,International travel coverage plan,REF461512,22/01/2024,137.09,,46874.64,Insurance-Travel
+21/01/2024,Parking fee payment,REF791278,21/01/2024,106.7,,46767.94,Transportation
+22/01/2024,Bonus payment - H2 2024,REF361265,23/01/2024,,4192.53,50960.47,Salary
+24/01/2024,Premium payment for life insurance policy #POL60996,REF582121,25/01/2024,186.52,,50773.95,Insurance-Life
+25/01/2024,Physiotherapy session payment,REF761989,26/01/2024,397.56,,50376.39,Healthcare
+25/01/2024,Commission payment,REF181490,27/01/2024,,4399.98,54776.37,Salary
+25/01/2024,Home contents insurance premium,REF396158,26/01/2024,393.65,,54382.72,Insurance-Home
+28/01/2024,Contract payment - Training Program,REF881054,28/01/2024,,3169.2,57551.92,Salary
+29/01/2024,Commercial vehicle insurance - Van,REF288251,31/01/2024,286.19,,57265.73,Insurance-Motor
+30/01/2024,Commission payment,REF762720,30/01/2024,2592.33,,54673.4,Salary
+3/2/2024,Travel insurance for Asia trip,REF651323,3/2/2024,239.88,,54433.52,Insurance-Travel
+3/2/2024,Fuel payment at BP,REF332322,3/2/2024,91.77,,54341.75,Transportation
+4/2/2024,Book purchase for Economics course,REF556025,6/2/2024,353.98,,53987.77,Education
+4/2/2024,Car insurance premium for Audi A4,REF543706,6/2/2024,356.38,,53631.39,Insurance-Motor
+4/2/2024,Internet service payment to Comcast,REF576752,5/2/2024,283.01,,53348.38,Bills
+6/2/2024,Bonus payment - Jul-Sep 2024,REF891194,8/2/2024,,2911.94,56260.32,Salary
+8/2/2024,Taxi fare - Instacart,REF416032,9/2/2024,68.65,,56191.67,Transportation
+12/2/2024,Contract payment - Design Work,REF909275,12/2/2024,,6785.87,62977.54,Salary
+13/02/2024,Online order from Overstock,REF809051,15/02/2024,147.5,,62830.04,Shopping
+14/02/2024,Dinner at Red Lobster,REF825919,14/02/2024,197.36,,62632.68,Dining
+16/02/2024,Stock purchase - GOOGL,REF758064,18/02/2024,,420.76,63053.44,Investment-Dividend received from {company}
+16/02/2024,Building insurance annual payment,REF352906,18/02/2024,189.4,,62864.04,Insurance-Home
+17/02/2024,Stock purchase - MSFT,REF473839,17/02/2024,,4270.38,67134.42,Investment
+20/02/2024,Book purchase for Physics course,REF395482,20/02/2024,605.94,,66528.48,Education
+20/02/2024,Pharmacy purchase at Rite Aid,REF308580,21/02/2024,321.2,,66207.28,Healthcare
+20/02/2024,Taxi fare - Uber Eats,REF339774,20/02/2024,32.21,,66175.07,Transportation
+20/02/2024,Contract payment - Design Work,REF546572,20/02/2024,,6240.49,72415.56,Salary
+22/02/2024,Dinner at Outback Steakhouse,REF865768,23/02/2024,112.66,,72302.9,Dining
+22/02/2024,Furniture purchase at Nordstrom,REF793712,22/02/2024,248.27,,72054.63,Shopping
+22/02/2024,Two-wheeler insurance for Yamaha YZF,REF480009,22/02/2024,248.7,,71805.93,Insurance-Motor
+22/02/2024,Life insurance installment #11 of 24,REF541818,23/02/2024,380.32,,71425.61,Insurance-Life
+24/02/2024,Water utility bill - September,REF416814,24/02/2024,207.42,,71218.19,Bills
+24/02/2024,Sports event tickets - Broadway Show,REF867255,24/02/2024,124.18,,71094.01,Entertainment
+25/02/2024,Car service and maintenance,REF385636,27/02/2024,70.27,,71023.74,Transportation
+26/02/2024,Car service and maintenance,REF218677,26/02/2024,132.18,,70891.56,Transportation
+27/02/2024,Pharmacy purchase at Walgreens,REF310377,28/02/2024,219.2,,70672.36,Healthcare
+28/02/2024,Bonus payment - 2024-2025,REF189187,1/3/2024,,5416.44,76088.8,Salary
+28/02/2024,Retirement fund contribution,REF452399,1/3/2024,,201.77,76290.57,Investment-Dividend received from {company}
+28/02/2024,Breakfast at Subway,REF937926,1/3/2024,130.13,,76160.44,Dining
+29/02/2024,Housing protection plan payment,REF103717,2/3/2024,193.59,,75966.85,Insurance-Home
+2/3/2024,Monthly salary from Global Solutions,REF999389,2/3/2024,,6319.99,82286.84,Salary
+3/3/2024,Annual multi-trip insurance renewal,REF806031,5/3/2024,107.07,,82179.77,Insurance-Travel
+6/3/2024,Doctor's consultation fee - Dr. Johnson,REF360482,7/3/2024,428.93,,81750.84,Healthcare
+8/3/2024,Bonus payment - Apr-Jun 2024,REF681396,10/3/2024,,5122.27,86873.11,Salary
+10/3/2024,Electricity bill payment for August,REF236110,12/3/2024,258.87,,86614.24,Bills
+10/3/2024,Home contents insurance premium,REF213496,10/3/2024,105.12,,86509.12,Insurance-Home
+11/3/2024,Overtime payment,REF687239,13/03/2024,,2973.91,89483.03,Salary
+11/3/2024,Contract payment - Software Development,REF883288,13/03/2024,,3596.88,93079.91,Salary
+12/3/2024,Stock purchase - MSFT,REF136909,13/03/2024,,677.48,93757.39,Investment
+13/03/2024,Stock purchase - PG,REF343386,13/03/2024,1106.14,,92651.25,Investment
+14/03/2024,Stock purchase - META,REF671744,15/03/2024,2501.73,,90149.52,Investment
+15/03/2024,Streaming service subscription - Uber,REF201919,16/03/2024,106.85,,90042.67,Entertainment
+18/03/2024,Overtime payment,REF290088,18/03/2024,,2683.49,92726.16,Salary
+18/03/2024,Monthly salary from ABC Corporation,REF234185,18/03/2024,,3056.55,95782.71,Salary
+19/03/2024,Bonus payment - 2024-2025,REF763373,21/03/2024,,6548.94,102331.65,Salary
+20/03/2024,Family health plan premium,REF455959,20/03/2024,181,,102150.65,Insurance-Health
+22/03/2024,Online course subscription - edX,REF236114,23/03/2024,666.85,,101483.8,Education
+22/03/2024,Annual renewal of life insurance with Liberty,REF251884,23/03/2024,134.66,,101349.14,Insurance-Life
+24/03/2024,Monthly salary from XYZ Industries,REF218327,26/03/2024,,3393.69,104742.83,Salary
+24/03/2024,Mutual fund investment - Vanguard Total Market,REF188777,25/03/2024,4801.83,,99941,Investment
+26/03/2024,Car service and maintenance,REF365514,26/03/2024,28.53,,99912.47,Transportation
+26/03/2024,Streaming service subscription - Grubhub,REF680226,26/03/2024,196.57,,99715.9,Entertainment
+29/03/2024,Dividend received from Allianz,REF658515,29/03/2024,4598.66,,95117.24,Investment
+29/03/2024,Retirement fund contribution,REF876046,31/03/2024,1035.81,,94081.43,Investment
+30/03/2024,Retirement fund contribution,REF289822,1/4/2024,,4396.29,98477.72,Investment
+30/03/2024,Breakfast at Subway,REF232883,31/03/2024,64.86,,98412.86,Dining
+30/03/2024,Ride-sharing service - Ola,REF892180,31/03/2024,81.13,,98331.73,Transportation
+31/03/2024,Home contents insurance premium,REF117746,1/4/2024,116.35,,98215.38,Insurance-Home
+31/03/2024,Retirement fund contribution,REF533655,31/03/2024,934.43,,97280.95,Investment
+1/4/2024,Electronics purchase - Microwave,REF135688,1/4/2024,196.41,,97084.54,Shopping
+1/4/2024,Mutual fund investment - T Rowe Price Growth,REF776420,3/4/2024,,379.22,97463.76,Investment-Dividend received from {company}
+1/4/2024,Bonus payment - Jan-Mar 2024,REF247547,2/4/2024,5137.43,,92326.33,Salary
+1/4/2024,Bonus payment - Jan-Mar 2025,REF809080,1/4/2024,,5103.15,97429.48,Salary
+2/4/2024,Streaming service subscription - Uber Eats,REF549972,4/4/2024,183.49,,97245.99,Entertainment
+3/4/2024,Property insurance renewal,REF744639,3/4/2024,266.48,,96979.51,Insurance-Home
+3/4/2024,Contract payment - Software Development,REF762383,5/4/2024,,2703.99,99683.5,Salary
+4/4/2024,Fixed deposit creation,REF612028,4/4/2024,,4944.8,104628.3,Investment
+4/4/2024,Bond purchase - Treasury,REF967356,6/4/2024,1474.16,,103154.14,Investment
+5/4/2024,Health insurance premium for Jul-Sep 2024,REF914413,6/4/2024,350.98,,102803.16,Insurance-Health
+5/4/2024,Stock purchase - PG,REF860341,6/4/2024,1756.9,,101046.26,Investment
+5/4/2024,Mutual fund investment - PIMCO Income Fund,REF681202,5/4/2024,2129.32,,98916.94,Investment
+6/4/2024,Travel insurance for South America trip,REF333960,7/4/2024,80.96,,98835.98,Insurance-Travel
+6/4/2024,Car service and maintenance,REF789843,8/4/2024,10.05,,98825.93,Transportation
+6/4/2024,Dinner at Chili's,REF461934,6/4/2024,78.98,,98746.95,Dining
+6/4/2024,Bonus payment - H1 2024,REF145204,6/4/2024,5080.99,,93665.96,Salary
+7/4/2024,Holiday insurance package,REF751944,7/4/2024,57.27,,93608.69,Insurance-Travel
+7/4/2024,Commission payment,REF905606,8/4/2024,,6544.22,100152.91,Salary
+8/4/2024,Pharmacy purchase at Rite Aid,REF820179,10/4/2024,36.64,,100116.27,Healthcare
+8/4/2024,Two-wheeler insurance for Kawasaki Ninja,REF896763,8/4/2024,274.27,,99842,Insurance-Motor
+8/4/2024,Tuition fee payment - Business School,REF279282,10/4/2024,537.28,,99304.72,Education
+9/4/2024,Dividend received from Allianz,REF277173,9/4/2024,,1961,101265.72,Investment
+10/4/2024,Landline phone bill payment,REF146659,11/4/2024,265.74,,100999.98,Bills
+10/4/2024,Ride-sharing service - Postmates,REF798911,10/4/2024,24.35,,100975.63,Transportation
+11/4/2024,Overtime payment,REF898292,11/4/2024,,2894,103869.63,Salary
+11/4/2024,Two-wheeler insurance for Harley Davidson,REF308178,11/4/2024,473.69,,103395.94,Insurance-Motor
+12/4/2024,Mutual fund investment - T Rowe Price Growth,REF465826,12/4/2024,,209.71,103605.65,Investment-Dividend received from {company}
+12/4/2024,Commission payment,REF814799,14/04/2024,2757.31,,100848.34,Salary
+12/4/2024,Commission payment,REF519958,13/04/2024,,5264.36,106112.7,Salary
+18/04/2024,Premium payment for life insurance policy #POL13095,REF224394,18/04/2024,440.81,,105671.89,Insurance-Life
+18/04/2024,Vehicle insurance payment for Jul-Sep 2024,REF753659,20/04/2024,464.43,,105207.46,Insurance-Motor
+20/04/2024,Overtime payment,REF882628,22/04/2024,,5575.99,110783.45,Salary
+20/04/2024,Mutual fund investment - T Rowe Price Growth,REF323488,20/04/2024,,3577.18,114360.63,Investment
+21/04/2024,Contract payment - Marketing Campaign,REF525886,23/04/2024,,2648.2,117008.83,Salary
+23/04/2024,Gas bill for April,REF784571,23/04/2024,229.84,,116778.99,Bills
+25/04/2024,Premium payment for life insurance policy #POL26818,REF334327,26/04/2024,186.06,,116592.93,Insurance-Life
+26/04/2024,Dental treatment at Perfect Smile,REF549000,28/04/2024,482.64,,116110.29,Healthcare
+26/04/2024,Hospital bill payment - General Hospital,REF449768,27/04/2024,216.05,,115894.24,Healthcare
+27/04/2024,Commercial vehicle insurance - Bus,REF903691,29/04/2024,583.46,,115310.78,Insurance-Motor
+1/5/2024,Stock purchase - GOOGL,REF862431,3/5/2024,,1717.52,117028.3,Investment
+1/5/2024,Mutual fund investment - T Rowe Price Growth,REF988032,2/5/2024,,149.56,117177.86,Investment-Dividend received from {company}
+2/5/2024,School supplies purchase,REF531273,4/5/2024,490.28,,116687.58,Education
+2/5/2024,Property insurance renewal,REF470988,4/5/2024,327.92,,116359.66,Insurance-Home
+3/5/2024,Annual renewal of life insurance with MetLife,REF439313,4/5/2024,620.32,,115739.34,Insurance-Life
+3/5/2024,Bond purchase - Treasury,REF929594,3/5/2024,1245.88,,114493.46,Investment
+4/5/2024,Electronics purchase - Smartphone,REF750091,6/5/2024,456.66,,114036.8,Shopping
+4/5/2024,Cable TV subscription renewal,REF848950,5/5/2024,299.05,,113737.75,Bills
+4/5/2024,Monthly salary from Global Solutions,REF809979,5/5/2024,,6054.56,119792.31,Salary
+5/5/2024,Purchase at Macy's - clothing,REF798756,7/5/2024,364.74,,119427.57,Shopping
+6/5/2024,Electronics purchase - Refrigerator,REF246144,7/5/2024,196.45,,119231.12,Shopping
+7/5/2024,Taxi fare - Postmates,REF920993,7/5/2024,127.22,,119103.9,Transportation
+9/5/2024,Online order from Wayfair,REF621703,9/5/2024,243.61,,118860.29,Shopping
+10/5/2024,Monthly salary from ABC Corporation,REF347183,12/5/2024,,3688.51,122548.8,Salary
+11/5/2024,Stock purchase - META,REF966990,13/05/2024,,1911.29,124460.09,Investment
+11/5/2024,Hospital bill payment - Community Hospital,REF875312,12/5/2024,405.44,,124054.65,Healthcare
+12/5/2024,Cable TV subscription renewal,REF956346,13/05/2024,222.25,,123832.4,Bills
+12/5/2024,Physiotherapy session payment,REF311040,12/5/2024,253.24,,123579.16,Healthcare
+12/5/2024,Mutual fund investment - T Rowe Price Growth,REF814129,12/5/2024,,380.78,123959.94,Investment-Dividend received from {company}
+13/05/2024,Retirement fund contribution,REF860821,14/05/2024,,867.21,124827.15,Investment
+13/05/2024,Retirement fund contribution,REF575340,13/05/2024,,355.79,125182.94,Investment-Dividend received from {company}
+13/05/2024,Coffee and snacks at Costa Coffee,REF570071,15/05/2024,29.22,,125153.72,Dining
+14/05/2024,Mobile phone bill - +1-555-3386,REF657911,16/05/2024,250.26,,124903.46,Bills
+17/05/2024,Stock purchase - JPM,REF773386,18/05/2024,674.41,,124229.05,Investment
+17/05/2024,Business trip insurance coverage,REF246025,18/05/2024,57.94,,124171.11,Insurance-Travel
+17/05/2024,Holiday insurance package,REF579828,19/05/2024,147.63,,124023.48,Insurance-Travel
+18/05/2024,Student loan repayment,REF967649,19/05/2024,381.3,,123642.18,Education
+19/05/2024,Dividend received from AXA,REF949254,20/05/2024,,1569.67,125211.85,Investment
+20/05/2024,Bond purchase - Corporate,REF733775,22/05/2024,2307.91,,122903.94,Investment
+21/05/2024,Dinner at TGI Fridays,REF232038,21/05/2024,86.75,,122817.19,Dining
+23/05/2024,Movie tickets at Landmark Theatres,REF978324,24/05/2024,178.62,,122638.57,Entertainment
+26/05/2024,Commission payment,REF620926,27/05/2024,,4082.75,126721.32,Salary
+26/05/2024,Fixed deposit creation,REF225229,26/05/2024,,208.61,126929.93,Investment-Dividend received from {company}
+27/05/2024,Purchase at Macy's - clothing,REF616888,29/05/2024,26.45,,126903.48,Shopping
+27/05/2024,Business trip insurance coverage,REF331467,27/05/2024,259.32,,126644.16,Insurance-Travel
+27/05/2024,Bonus payment - Apr-Jun 2024,REF190797,29/05/2024,,5879.61,132523.77,Salary
+27/05/2024,Property insurance renewal,REF749405,28/05/2024,293.9,,132229.87,Insurance-Home
+28/05/2024,Bookstore purchase,REF524406,28/05/2024,413.27,,131816.6,Shopping
+29/05/2024,Family health plan premium,REF408019,29/05/2024,517.79,,131298.81,Insurance-Health
+30/05/2024,Mutual fund investment - Vanguard Total Market,REF825017,30/05/2024,,292.91,131591.72,Investment-Dividend received from {company}
+30/05/2024,Annual renewal of life insurance with Cigna,REF305106,1/6/2024,555.58,,131036.14,Insurance-Life
+31/05/2024,Book purchase for Economics course,REF364410,2/6/2024,712.45,,130323.69,Education
+2/6/2024,Purchase at Nordstrom - clothing,REF960420,4/6/2024,91.25,,130232.44,Shopping
+3/6/2024,Overtime payment,REF969925,5/6/2024,,6243.29,136475.73,Salary
+6/6/2024,Bookstore purchase,REF237012,7/6/2024,156.33,,136319.4,Shopping
+8/6/2024,Public transport monthly pass,REF910083,10/6/2024,26.92,,136292.48,Transportation
+9/6/2024,Mutual fund investment - PIMCO Income Fund,REF603817,9/6/2024,3006.26,,133286.22,Investment
+9/6/2024,Doctor's consultation fee - Dr. Brown,REF721453,10/6/2024,172.25,,133113.97,Healthcare
+9/6/2024,Commercial vehicle insurance - Bus,REF231718,11/6/2024,242.43,,132871.54,Insurance-Motor
+9/6/2024,Monthly salary from ABC Corporation,REF458365,9/6/2024,6351.86,,126519.68,Salary
+10/6/2024,Contract payment - Consulting Project,REF994882,12/6/2024,,6362.2,132881.88,Salary
+12/6/2024,Commission payment,REF726130,13/06/2024,,7396.72,140278.6,Salary
+12/6/2024,Pharmacy purchase at Walgreens,REF268339,14/06/2024,488.85,,139789.75,Healthcare
+14/06/2024,Bond purchase - Municipal,REF460597,14/06/2024,,359.96,140149.71,Investment-Dividend received from {company}
+14/06/2024,Electricity bill payment for October,REF807771,14/06/2024,252.91,,139896.8,Bills
+15/06/2024,Monthly salary from United Enterprises,REF307244,16/06/2024,,5135.61,145032.41,Salary
+15/06/2024,Commission payment,REF530295,17/06/2024,,6477.61,151510.02,Salary
+16/06/2024,Pharmacy purchase at Local Pharmacy,REF643302,17/06/2024,536.96,,150973.06,Healthcare
+17/06/2024,Public transport monthly pass,REF968518,17/06/2024,24.9,,150948.16,Transportation
+17/06/2024,Online order from Etsy,REF585680,17/06/2024,98.43,,150849.73,Shopping
+18/06/2024,Term life insurance premium - policy #POL68120,REF133091,20/06/2024,672.4,,150177.33,Insurance-Life
+18/06/2024,Auto insurance renewal - policy #POL26818,REF593650,20/06/2024,517.67,,149659.66,Insurance-Motor
+18/06/2024,Tuition fee payment - Business School,REF590591,20/06/2024,937.46,,148722.2,Education
+19/06/2024,Furniture purchase at Zara,REF420305,20/06/2024,244.61,,148477.59,Shopping
+20/06/2024,Stock purchase - PG,REF614110,20/06/2024,,1920.27,150397.86,Investment
+21/06/2024,Contract payment - Software Development,REF594370,22/06/2024,,5997,156394.86,Salary
+21/06/2024,Overtime payment,REF830913,23/06/2024,,3494.32,159889.18,Salary
+22/06/2024,Bonus payment - H1 2024,REF668699,23/06/2024,3181.37,,156707.81,Salary
+23/06/2024,Mutual fund investment - T Rowe Price Growth,REF213663,25/06/2024,,454.92,157162.73,Investment-Dividend received from {company}
+29/06/2024,School supplies purchase,REF934963,30/06/2024,744.35,,156418.38,Education
+30/06/2024,Coffee and snacks at Costa Coffee,REF742929,2/7/2024,131.82,,156286.56,Dining
+30/06/2024,Parking fee payment,REF396519,1/7/2024,90.2,,156196.36,Transportation
+1/7/2024,Overtime payment,REF481109,1/7/2024,,6910.14,163106.5,Salary
+3/7/2024,Doctor's consultation fee - Dr. Smith,REF693865,4/7/2024,518.36,,162588.14,Healthcare
+3/7/2024,Internet service payment to T-Mobile,REF526411,4/7/2024,210.15,,162377.99,Bills
+4/7/2024,Home contents insurance premium,REF698383,5/7/2024,316.31,,162061.68,Insurance-Home
+5/7/2024,Internet service payment to Comcast,REF871589,5/7/2024,176.34,,161885.34,Bills
+7/7/2024,Dividend received from Zurich,REF278490,7/7/2024,3999.47,,157885.87,Investment
+7/7/2024,Commission payment,REF695049,8/7/2024,,4669.54,162555.41,Salary
+7/7/2024,Bond purchase - Corporate,REF731531,7/7/2024,1614.41,,160941,Investment
+8/7/2024,Bonus payment - Jan-Mar 2025,REF810146,10/7/2024,,6936.79,167877.79,Salary
+8/7/2024,Monthly salary from Global Solutions,REF766299,10/7/2024,,6409.59,174287.38,Salary
+8/7/2024,Home contents insurance premium,REF952041,9/7/2024,115.72,,174171.66,Insurance-Home
+8/7/2024,Travel insurance for South America trip,REF964949,10/7/2024,195.84,,173975.82,Insurance-Travel
+10/7/2024,Concert tickets - NBA Game,REF698460,12/7/2024,153.8,,173822.02,Entertainment
+11/7/2024,Bonus payment - 2024-2025,REF364505,11/7/2024,,6097.96,179919.98,Salary
+12/7/2024,Life insurance installment #1 of 48,REF384798,12/7/2024,555.5,,179364.48,Insurance-Life
+14/07/2024,Dividend received from Liberty,REF761599,16/07/2024,,330.75,179695.23,Investment-Dividend received from {company}
+17/07/2024,Annual renewal of life insurance with MetLife,REF121322,18/07/2024,431.53,,179263.7,Insurance-Life
+18/07/2024,Contract payment - Training Program,REF202111,19/07/2024,,7166.25,186429.95,Salary
+19/07/2024,Bonus payment - Apr-Jun 2024,REF783250,19/07/2024,,3455.77,189885.72,Salary
+21/07/2024,Building insurance annual payment,REF390308,22/07/2024,242.43,,189643.29,Insurance-Home
+21/07/2024,Life insurance installment #9 of 12,REF491183,21/07/2024,347.48,,189295.81,Insurance-Life
+25/07/2024,Health insurance premium for H2 2024,REF980031,27/07/2024,782.66,,188513.15,Insurance-Health
+25/07/2024,Bonus payment - 2024-2025,REF657601,27/07/2024,,3050.67,191563.82,Salary
+26/07/2024,Purchase at Macy's - clothing,REF336918,27/07/2024,213.49,,191350.33,Shopping
+27/07/2024,Contract payment - Design Work,REF767741,29/07/2024,,7088.7,198439.03,Salary
+28/07/2024,School supplies purchase,REF955825,30/07/2024,767.02,,197672.01,Education
+29/07/2024,Medical insurance payment to Zurich,REF519662,30/07/2024,405.99,,197266.02,Insurance-Health
+29/07/2024,Stock purchase - META,REF296587,30/07/2024,,2827.51,200093.53,Investment
+30/07/2024,Commission payment,REF737195,30/07/2024,,4473.66,204567.19,Salary
+31/07/2024,Property insurance renewal,REF988069,1/8/2024,349.46,,204217.73,Insurance-Home
+31/07/2024,Physiotherapy session payment,REF452510,1/8/2024,316.33,,203901.4,Healthcare
+1/8/2024,Retirement fund contribution,REF115344,3/8/2024,2506.22,,201395.18,Investment
+2/8/2024,Hospital bill payment - Regional Medical Center,REF882497,2/8/2024,461.41,,200933.77,Healthcare
+2/8/2024,Contract payment - Marketing Campaign,REF432352,2/8/2024,3824.63,,197109.14,Salary
+3/8/2024,Travel insurance for Australia trip,REF925134,3/8/2024,151.12,,196958.02,Insurance-Travel
+4/8/2024,Monthly salary from United Enterprises,REF310225,4/8/2024,,6226.93,203184.95,Salary
+5/8/2024,Contract payment - Training Program,REF650694,6/8/2024,4058.07,,199126.88,Salary
+5/8/2024,Commission payment,REF843315,5/8/2024,,3434.08,202560.96,Salary
+8/8/2024,Life insurance installment #4 of 12,REF574572,8/8/2024,348.71,,202212.25,Insurance-Life
+12/8/2024,Housing protection plan payment,REF443987,12/8/2024,157.43,,202054.82,Insurance-Home
+13/08/2024,Breakfast at Starbucks,REF386623,13/08/2024,157.06,,201897.76,Dining
+15/08/2024,Highway toll payment,REF425768,17/08/2024,40.64,,201857.12,Transportation
+16/08/2024,Monthly salary from Global Solutions,REF507072,17/08/2024,,6591.84,208448.96,Salary
+17/08/2024,Contract payment - Consulting Project,REF274349,19/08/2024,,6056.13,214505.09,Salary
+17/08/2024,Health coverage renewal #POL30371,REF544209,19/08/2024,705.28,,213799.81,Insurance-Health
+18/08/2024,Annual health insurance payment,REF947815,18/08/2024,454.82,,213344.99,Insurance-Health
+18/08/2024,Commission payment,REF670112,18/08/2024,,5242.38,218587.37,Salary
+19/08/2024,Bonus payment - Apr-Jun 2024,REF690646,20/08/2024,,6703.11,225290.48,Salary
+20/08/2024,Pharmacy purchase at Rite Aid,REF435486,22/08/2024,303.93,,224986.55,Healthcare
+20/08/2024,Building insurance annual payment,REF914644,21/08/2024,105.58,,224880.97,Insurance-Home
+20/08/2024,Movie tickets at AMC,REF647699,21/08/2024,42.78,,224838.19,Entertainment
+21/08/2024,Commission payment,REF969933,21/08/2024,,5954.49,230792.68,Salary
+22/08/2024,Monthly salary from ABC Corporation,REF859785,24/08/2024,,6859.64,237652.32,Salary
+23/08/2024,Ride-sharing service - Grubhub,REF981585,23/08/2024,149.26,,237503.06,Transportation
+25/08/2024,Commission payment,REF718997,26/08/2024,3506.22,,233996.84,Salary
+26/08/2024,Online order from Walmart.com,REF472766,26/08/2024,75.71,,233921.13,Shopping
+29/08/2024,Concert tickets - Comedy Show,REF923131,29/08/2024,116.53,,233804.6,Entertainment
+29/08/2024,Family health plan premium,REF255762,29/08/2024,700.24,,233104.36,Insurance-Health
+30/08/2024,Overtime payment,REF365840,1/9/2024,,4555.62,237659.98,Salary
+30/08/2024,Monthly salary from National Services,REF259446,31/08/2024,6114.51,,231545.47,Salary
+31/08/2024,Family health plan premium,REF697475,31/08/2024,428.14,,231117.33,Insurance-Health
+1/9/2024,Bonus payment - H1 2024,REF500090,3/9/2024,,6519.07,237636.4,Salary
+1/9/2024,Bonus payment - Jul-Sep 2024,REF709605,3/9/2024,,6344.46,243980.86,Salary
+1/9/2024,Vehicle insurance payment for H2 2024,REF638844,2/9/2024,520.79,,243460.07,Insurance-Motor
+5/9/2024,Grocery shopping at Whole Foods,REF181413,6/9/2024,199.57,,243260.5,Shopping
+5/9/2024,Contract payment - Consulting Project,REF287733,5/9/2024,,4348.31,247608.81,Salary
+5/9/2024,Commission payment,REF485465,7/9/2024,6273.22,,241335.59,Salary
+6/9/2024,Fuel payment at BP,REF827585,8/9/2024,108.26,,241227.33,Transportation
+8/9/2024,Annual multi-trip insurance renewal,REF359505,8/9/2024,222.55,,241004.78,Insurance-Travel
+8/9/2024,Landline phone bill payment,REF224833,8/9/2024,99.8,,240904.98,Bills
+9/9/2024,Housing protection plan payment,REF313334,11/9/2024,290.92,,240614.06,Insurance-Home
+10/9/2024,Movie tickets at Local Cinema,REF233374,11/9/2024,78.5,,240535.56,Entertainment
+10/9/2024,Furniture purchase at IKEA,REF371226,11/9/2024,273.82,,240261.74,Shopping
+12/9/2024,Annual multi-trip insurance renewal,REF165518,12/9/2024,212.85,,240048.89,Insurance-Travel
+12/9/2024,Health coverage renewal #POL51302,REF619025,14/09/2024,780.45,,239268.44,Insurance-Health
+13/09/2024,Term life insurance premium - policy #POL97746,REF581058,13/09/2024,810.3,,238458.14,Insurance-Life
+15/09/2024,Dividend received from Allianz,REF172215,15/09/2024,3272.42,,235185.72,Investment
+16/09/2024,Overtime payment,REF375198,16/09/2024,,6460.99,241646.71,Salary
+17/09/2024,Bookstore purchase,REF640821,17/09/2024,323.04,,241323.67,Shopping
+17/09/2024,Doctor's consultation fee - Dr. Miller,REF891914,18/09/2024,201.18,,241122.49,Healthcare
+18/09/2024,Commission payment,REF815431,20/09/2024,3955.7,,237166.79,Salary
+21/09/2024,Holiday insurance package,REF642929,21/09/2024,275.51,,236891.28,Insurance-Travel
+22/09/2024,Mutual fund investment - BlackRock Global,REF319096,24/09/2024,,394.1,237285.38,Investment-Dividend received from {company}
+27/09/2024,Commission payment,REF319816,29/09/2024,,3152.32,240437.7,Salary
+28/09/2024,Home insurance premium - property at 404 Birch Ct,REF638293,30/09/2024,199.96,,240237.74,Insurance-Home
+28/09/2024,Movie tickets at Local Cinema,REF517015,29/09/2024,94.04,,240143.7,Entertainment
+29/09/2024,Laboratory test charges - Quest Diagnostics,REF886332,29/09/2024,271.24,,239872.46,Healthcare
+30/09/2024,Holiday insurance package,REF716014,1/10/2024,171.18,,239701.28,Insurance-Travel
+1/10/2024,Annual health insurance payment,REF884455,1/10/2024,453.28,,239248,Insurance-Health
+2/10/2024,Retirement fund contribution,REF760229,2/10/2024,,140.61,239388.61,Investment-Dividend received from {company}
+3/10/2024,Holiday insurance package,REF769728,3/10/2024,250.99,,239137.62,Insurance-Travel
+3/10/2024,Dinner at Chili's,REF311451,4/10/2024,83.42,,239054.2,Dining
+7/10/2024,Stock purchase - V,REF269581,9/10/2024,4424.6,,234629.6,Investment
+10/10/2024,Gaming subscription renewal,REF315562,12/10/2024,48.43,,234581.17,Entertainment
+13/10/2024,Public transport monthly pass,REF708835,13/10/2024,97.72,,234483.45,Transportation
+15/10/2024,Car insurance premium for Audi A4,REF764109,15/10/2024,597.85,,233885.6,Insurance-Motor
+16/10/2024,Holiday insurance package,REF574054,16/10/2024,215.84,,233669.76,Insurance-Travel
+16/10/2024,Monthly salary from Tech Innovations,REF550395,18/10/2024,3223,,230446.76,Salary
+16/10/2024,Overtime payment,REF373347,16/10/2024,,6201.68,236648.44,Salary
+19/10/2024,Book purchase for Computer Science course,REF936352,21/10/2024,864.01,,235784.43,Education
+21/10/2024,Contract payment - Training Program,REF727004,21/10/2024,,4741.18,240525.61,Salary
+21/10/2024,Internet service payment to DirecTV,REF281998,23/10/2024,196.93,,240328.68,Bills
+24/10/2024,Bonus payment - Jan-Mar 2025,REF504103,25/10/2024,,6529.93,246858.61,Salary
+25/10/2024,Commission payment,REF600550,27/10/2024,,2621.95,249480.56,Salary
+25/10/2024,Highway toll payment,REF610438,25/10/2024,70.09,,249410.47,Transportation
+27/10/2024,Overtime payment,REF797436,27/10/2024,,3209.58,252620.05,Salary
+27/10/2024,Contract payment - Design Work,REF460980,28/10/2024,,4396.75,257016.8,Salary
+28/10/2024,Overtime payment,REF768180,29/10/2024,,5303.47,262320.27,Salary
+30/10/2024,Gaming subscription renewal,REF393514,31/10/2024,139.46,,262180.81,Entertainment
+30/10/2024,Commission payment,REF372535,31/10/2024,5859.31,,256321.5,Salary
+31/10/2024,Fixed deposit creation,REF781683,1/11/2024,,3816.89,260138.39,Investment
+31/10/2024,Monthly salary from National Services,REF935023,31/10/2024,,3859.5,263997.89,Salary
+1/11/2024,Building insurance annual payment,REF718248,3/11/2024,187.81,,263810.08,Insurance-Home
+2/11/2024,Overtime payment,REF705170,3/11/2024,,3724.17,267534.25,Salary
+2/11/2024,Commission payment,REF765608,3/11/2024,,5976.07,273510.32,Salary
+2/11/2024,Home contents insurance premium,REF152646,4/11/2024,358.09,,273152.23,Insurance-Home
+3/11/2024,Housing protection plan payment,REF698169,3/11/2024,388.92,,272763.31,Insurance-Home
+5/11/2024,Premium payment for life insurance policy #POL30371,REF123454,6/11/2024,124.97,,272638.34,Insurance-Life
+6/11/2024,Premium payment for life insurance policy #POL19650,REF385393,7/11/2024,834.85,,271803.49,Insurance-Life
+10/11/2024,Home contents insurance premium,REF594537,10/11/2024,262.23,,271541.26,Insurance-Home
+11/11/2024,Monthly salary from Global Solutions,REF469140,13/11/2024,7342,,264199.26,Salary
+11/11/2024,Home contents insurance premium,REF112951,11/11/2024,330.02,,263869.24,Insurance-Home
+12/11/2024,Business trip insurance coverage,REF763805,14/11/2024,175.99,,263693.25,Insurance-Travel
+15/11/2024,Bonus payment - Jan-Mar 2024,REF429481,15/11/2024,,7276.95,270970.2,Salary
+15/11/2024,Family health plan premium,REF147544,17/11/2024,633.52,,270336.68,Insurance-Health
+17/11/2024,Physiotherapy session payment,REF524915,19/11/2024,109.88,,270226.8,Healthcare
+17/11/2024,Premium payment for life insurance policy #POL93015,REF593025,18/11/2024,763.45,,269463.35,Insurance-Life
+18/11/2024,International travel coverage plan,REF492305,19/11/2024,80.84,,269382.51,Insurance-Travel
+18/11/2024,Lunch payment - Starbucks,REF829676,20/11/2024,67.43,,269315.08,Dining
+19/11/2024,Ride-sharing service - Postmates,REF931937,19/11/2024,72.25,,269242.83,Transportation
+20/11/2024,Overtime payment,REF933142,21/11/2024,,5683,274925.83,Salary
+20/11/2024,Commission payment,REF546160,22/11/2024,,6417.07,281342.9,Salary
+20/11/2024,Student loan repayment,REF930292,20/11/2024,620.34,,280722.56,Education
+20/11/2024,Mobile phone bill - +1-555-3386,REF410736,20/11/2024,276.39,,280446.17,Bills
+20/11/2024,Health insurance premium for H1 2024,REF615705,22/11/2024,525.55,,279920.62,Insurance-Health
+24/11/2024,Annual health insurance payment,REF456494,25/11/2024,334.53,,279586.09,Insurance-Health
+24/11/2024,Highway toll payment,REF810137,26/11/2024,138.95,,279447.14,Transportation
+25/11/2024,Overtime payment,REF693170,26/11/2024,,4600.25,284047.39,Salary
+25/11/2024,Water utility bill - January,REF682384,27/11/2024,60.25,,283987.14,Bills
+29/11/2024,Student loan repayment,REF437232,1/12/2024,959.39,,283027.75,Education
+1/12/2024,Purchase at Target - clothing,REF545369,2/12/2024,125.64,,282902.11,Shopping
+3/12/2024,Dividend received from Aviva,REF162281,4/12/2024,,148.61,283050.72,Investment-Dividend received from {company}
+4/12/2024,Life coverage plan payment to Aetna,REF747369,5/12/2024,131.19,,282919.53,Insurance-Life
+4/12/2024,International travel coverage plan,REF775457,5/12/2024,177.33,,282742.2,Insurance-Travel
+5/12/2024,Ride-sharing service - Grubhub,REF912999,6/12/2024,96.82,,282645.38,Transportation
+8/12/2024,Commission payment,REF942803,10/12/2024,,3118.34,285763.72,Salary
+8/12/2024,Home insurance premium - property at 789 Pine Rd,REF935017,10/12/2024,281.84,,285481.88,Insurance-Home
+8/12/2024,Fixed deposit creation,REF662858,9/12/2024,1927.18,,283554.7,Investment
+10/12/2024,Contract payment - Software Development,REF218091,11/12/2024,,4180.98,287735.68,Salary
+10/12/2024,Lunch payment - Starbucks,REF316334,12/12/2024,143.96,,287591.72,Dining
+13/12/2024,Highway toll payment,REF538031,13/12/2024,15.16,,287576.56,Transportation
+14/12/2024,Breakfast at Local Diner,REF121253,16/12/2024,170.39,,287406.17,Dining
+14/12/2024,Monthly salary from ABC Corporation,REF826461,15/12/2024,,5929.7,293335.87,Salary
+14/12/2024,Bonus payment - H1 2024,REF869241,15/12/2024,6128.85,,287207.02,Salary
+18/12/2024,Stock purchase - MSFT,REF465924,18/12/2024,3227.51,,283979.51,Investment
+20/12/2024,Holiday insurance package,REF581850,20/12/2024,174.45,,283805.06,Insurance-Travel
+22/12/2024,Parking fee payment,REF824841,24/12/2024,83.37,,283721.69,Transportation
+22/12/2024,Grocery shopping at Albertsons,REF978658,24/12/2024,236.88,,283484.81,Shopping
+23/12/2024,Bond purchase - Corporate,REF581101,24/12/2024,,4770.11,288254.92,Investment
+23/12/2024,Premium payment for life insurance policy #POL97746,REF822833,23/12/2024,416.78,,287838.14,Insurance-Life
+24/12/2024,Electronics purchase - Smartphone,REF324524,25/12/2024,372.09,,287466.05,Shopping
+24/12/2024,International travel coverage plan,REF532946,24/12/2024,149.96,,287316.09,Insurance-Travel
+24/12/2024,Health insurance premium for Jul-Sep 2024,REF663498,26/12/2024,746.4,,286569.69,Insurance-Health
+25/12/2024,Monthly salary from Tech Innovations,REF621174,27/12/2024,,7344.08,293913.77,Salary
+27/12/2024,Physiotherapy session payment,REF246690,29/12/2024,465.72,,293448.05,Healthcare
+28/12/2024,Mobile phone bill - +1-555-1363,REF130914,28/12/2024,247.28,,293200.77,Bills
+28/12/2024,Doctor's consultation fee - Dr. Brown,REF364267,29/12/2024,476.09,,292724.68,Healthcare
+29/12/2024,Mutual fund investment - Vanguard Total Market,REF154084,31/12/2024,,986.72,293711.4,Investment
+1/1/2025,Taxi fare - Uber,REF618647,2/1/2025,66.8,,293644.6,Transportation
+2/1/2025,Home insurance premium - property at 202 Cedar Ln,REF919917,4/1/2025,294.85,,293349.75,Insurance-Home
+3/1/2025,Purchase at Target - clothing,REF847414,3/1/2025,425,,292924.75,Shopping
+3/1/2025,Auto insurance renewal - policy #POL93015,REF262850,4/1/2025,439.23,,292485.52,Insurance-Motor
+3/1/2025,Auto insurance renewal - policy #POL68120,REF744507,5/1/2025,329.39,,292156.13,Insurance-Motor
+6/1/2025,Holiday insurance package,REF108766,6/1/2025,183.24,,291972.89,Insurance-Travel
+6/1/2025,Health insurance premium for Jan-Mar 2025,REF806984,6/1/2025,744.28,,291228.61,Insurance-Health
+8/1/2025,Dinner at Chili's,REF557592,10/1/2025,125.74,,291102.87,Dining
+8/1/2025,Theme park entry fees,REF114886,8/1/2025,131.09,,290971.78,Entertainment
+8/1/2025,International travel coverage plan,REF839498,10/1/2025,268.51,,290703.27,Insurance-Travel
+9/1/2025,Life insurance installment #12 of 48,REF470457,9/1/2025,870.8,,289832.47,Insurance-Life
+9/1/2025,Overtime payment,REF556592,11/1/2025,,6030.35,295862.82,Salary
+11/1/2025,Home appliance - Air Purifier,REF643536,12/1/2025,158.05,,295704.77,Shopping
+11/1/2025,Highway toll payment,REF598077,12/1/2025,39.33,,295665.44,Transportation
+14/01/2025,Life coverage plan payment to AXA,REF845361,16/01/2025,810.8,,294854.64,Insurance-Life
+14/01/2025,Pharmacy purchase at Rite Aid,REF258839,14/01/2025,599.83,,294254.81,Healthcare
+15/01/2025,Monthly salary from XYZ Industries,REF851725,15/01/2025,6857.46,,287397.35,Salary
+15/01/2025,Movie tickets at Regal,REF681097,17/01/2025,33,,287364.35,Entertainment
+16/01/2025,Bonus payment - H2 2024,REF555538,18/01/2025,,3649.51,291013.86,Salary
+18/01/2025,Commission payment,REF314447,18/01/2025,,5774.58,296788.44,Salary
+19/01/2025,Gaming subscription renewal,REF995243,19/01/2025,153.81,,296634.63,Entertainment
+19/01/2025,Bonus payment - 2024-2025,REF648976,21/01/2025,,3264.87,299899.5,Salary
+23/01/2025,Contract payment - Design Work,REF765598,24/01/2025,4482.99,,295416.51,Salary
+23/01/2025,Home contents insurance premium,REF119448,24/01/2025,176.62,,295239.89,Insurance-Home
+26/01/2025,Monthly salary from ABC Corporation,REF442495,28/01/2025,,4359.22,299599.11,Salary
+26/01/2025,Lunch payment - Subway,REF267837,28/01/2025,133.54,,299465.57,Dining
+28/01/2025,Contract payment - Research Study,REF660278,29/01/2025,,6252.13,305717.7,Salary
+29/01/2025,Health coverage renewal #POL97746,REF912616,31/01/2025,323.34,,305394.36,Insurance-Health
+31/01/2025,Two-wheeler insurance for Suzuki Hayabusa,REF288561,1/2/2025,563.84,,304830.52,Insurance-Motor
+4/2/2025,Stock purchase - V,REF489141,4/2/2025,3383.43,,301447.09,Investment
+4/2/2025,Laboratory test charges - Medical Labs,REF742483,6/2/2025,118.31,,301328.78,Healthcare
+4/2/2025,Auto insurance renewal - policy #POL97746,REF175310,4/2/2025,374.87,,300953.91,Insurance-Motor
+6/2/2025,Bonus payment - 2024-2025,REF552185,6/2/2025,,6818.77,307772.68,Salary
+8/2/2025,Dividend received from AXA,REF986683,10/2/2025,,354,308126.68,Investment-Dividend received from {company}
+8/2/2025,Bond purchase - International,REF995516,9/2/2025,,580.93,308707.61,Investment
+9/2/2025,Mutual fund investment - T Rowe Price Growth,REF154007,11/2/2025,2931,,305776.61,Investment
+9/2/2025,Hospital bill payment - Regional Medical Center,REF452100,9/2/2025,499.6,,305277.01,Healthcare
+10/2/2025,Stock purchase - AMZN,REF354698,12/2/2025,,410.83,305687.84,Investment-Dividend received from {company}
+10/2/2025,Home contents insurance premium,REF630497,10/2/2025,379.25,,305308.59,Insurance-Home
+11/2/2025,Annual renewal of life insurance with Allianz,REF853582,12/2/2025,590.85,,304717.74,Insurance-Life
+12/2/2025,Monthly salary from ABC Corporation,REF902437,13/02/2025,,5456.77,310174.51,Salary
+12/2/2025,Coffee and snacks at Costa Coffee,REF588407,12/2/2025,168,,310006.51,Dining
+13/02/2025,Annual renewal of life insurance with Prudential,REF852241,15/02/2025,927.29,,309079.22,Insurance-Life
+14/02/2025,Breakfast at Panera Bread,REF378587,14/02/2025,154.75,,308924.47,Dining
+14/02/2025,Monthly salary from Tech Innovations,REF939238,14/02/2025,,6324.48,315248.95,Salary
+16/02/2025,Mutual fund investment - PIMCO Income Fund,REF365185,17/02/2025,,2706.93,317955.88,Investment
+18/02/2025,Commission payment,REF282741,20/02/2025,,6904.9,324860.78,Salary
+18/02/2025,Bond purchase - International,REF801343,18/02/2025,2087.7,,322773.08,Investment
+21/02/2025,Vehicle insurance payment for Oct-Dec 2024,REF689899,21/02/2025,218.33,,322554.75,Insurance-Motor
+22/02/2025,Two-wheeler insurance for Harley Davidson,REF770378,24/02/2025,282.07,,322272.68,Insurance-Motor
+22/02/2025,Cable TV subscription renewal,REF318821,24/02/2025,165.21,,322107.47,Bills
+23/02/2025,Annual health insurance payment,REF203239,23/02/2025,334.69,,321772.78,Insurance-Health
+24/02/2025,School supplies purchase,REF479206,26/02/2025,535.94,,321236.84,Education
+25/02/2025,Bonus payment - H2 2024,REF202353,26/02/2025,,3944.44,325181.28,Salary
+25/02/2025,Home insurance premium - property at 101 Maple Dr,REF366651,26/02/2025,297.96,,324883.32,Insurance-Home
+25/02/2025,Monthly salary from Tech Innovations,REF380629,26/02/2025,,5981.4,330864.72,Salary
+26/02/2025,Theme park entry fees,REF398257,28/02/2025,120.42,,330744.3,Entertainment
+26/02/2025,Overtime payment,REF443522,27/02/2025,,6814.35,337558.65,Salary
+26/02/2025,Car service and maintenance,REF325892,27/02/2025,109.47,,337449.18,Transportation
+27/02/2025,Home contents insurance premium,REF535859,1/3/2025,307.07,,337142.11,Insurance-Home
+28/02/2025,Auto insurance renewal - policy #POL15336,REF608708,2/3/2025,405.6,,336736.51,Insurance-Motor
+2/3/2025,Travel insurance for Middle East trip,REF975893,4/3/2025,112.11,,336624.4,Insurance-Travel
+5/3/2025,Overtime payment,REF603598,5/3/2025,,6862.12,343486.52,Salary
+7/3/2025,Dividend received from Cigna,REF584532,9/3/2025,,402.41,343888.93,Investment-Dividend received from {company}
+9/3/2025,Overtime payment,REF891189,10/3/2025,,6734.97,350623.9,Salary
+9/3/2025,Term life insurance premium - policy #POL93015,REF378747,11/3/2025,615.16,,350008.74,Insurance-Life
+10/3/2025,Health coverage renewal #POL64752,REF438641,11/3/2025,548.86,,349459.88,Insurance-Health
+11/3/2025,Car service and maintenance,REF590877,11/3/2025,66.94,,349392.94,Transportation
+12/3/2025,Dividend received from Liberty,REF224196,13/03/2025,,2027.52,351420.46,Investment
+14/03/2025,Annual renewal of life insurance with Allianz,REF705048,15/03/2025,345.24,,351075.22,Insurance-Life
+14/03/2025,Streaming service subscription - Lyft,REF373845,16/03/2025,114.59,,350960.63,Entertainment
+14/03/2025,Bonus payment - Jan-Mar 2024,REF116389,16/03/2025,,2925.93,353886.56,Salary
+15/03/2025,Auto insurance renewal - policy #POL13006,REF562895,16/03/2025,402.24,,353484.32,Insurance-Motor
+16/03/2025,Contract payment - Training Program,REF717425,17/03/2025,,5130.22,358614.54,Salary
+17/03/2025,Contract payment - Consulting Project,REF394034,19/03/2025,,4326.3,362940.84,Salary
+17/03/2025,Gaming subscription renewal,REF827952,19/03/2025,51.22,,362889.62,Entertainment
+17/03/2025,Theme park entry fees,REF917109,19/03/2025,134.64,,362754.98,Entertainment
+19/03/2025,Commission payment,REF723575,19/03/2025,,5059.82,367814.8,Salary
+20/03/2025,Commission payment,REF454419,20/03/2025,,6540.65,374355.45,Salary
+22/03/2025,Bond purchase - Corporate,REF439478,24/03/2025,,1561.63,375917.08,Investment
+22/03/2025,Home appliance - Laptop,REF561666,22/03/2025,398.51,,375518.57,Shopping
+23/03/2025,Property insurance renewal,REF810075,25/03/2025,203.74,,375314.83,Insurance-Home
+24/03/2025,Laboratory test charges - Sonic Healthcare,REF871287,24/03/2025,39.93,,375274.9,Healthcare
+25/03/2025,Car insurance premium for Honda Civic,REF505305,27/03/2025,562.75,,374712.15,Insurance-Motor
+25/03/2025,Breakfast at McDonald's,REF538922,27/03/2025,195.24,,374516.91,Dining
+26/03/2025,Dividend received from Prudential,REF961647,26/03/2025,,2988.79,377505.7,Investment
+27/03/2025,Car service and maintenance,REF808836,28/03/2025,20.19,,377485.51,Transportation
+28/03/2025,Water utility bill - January,REF349546,30/03/2025,153.34,,377332.17,Bills
+28/03/2025,Health coverage renewal #POL51302,REF724154,29/03/2025,775.18,,376556.99,Insurance-Health
+29/03/2025,Fixed deposit creation,REF835528,29/03/2025,3970.8,,372586.19,Investment
+30/03/2025,Sports event tickets - NBA Game,REF120496,1/4/2025,51.18,,372535.01,Entertainment
+30/03/2025,Student loan repayment,REF587129,30/03/2025,484.46,,372050.55,Education
+2/4/2025,Commission payment,REF522789,2/4/2025,,2719.05,374769.6,Salary
+3/4/2025,Tuition fee payment - Business School,REF551229,4/4/2025,623.91,,374145.69,Education
+3/4/2025,Car service and maintenance,REF497211,5/4/2025,135.21,,374010.48,Transportation
+4/4/2025,Bonus payment - H1 2024,REF555053,4/4/2025,,4973.02,378983.5,Salary
+5/4/2025,Overtime payment,REF443529,7/4/2025,,4407.56,383391.06,Salary
+6/4/2025,Mutual fund investment - T Rowe Price Growth,REF312334,6/4/2025,,284.08,383675.14,Investment-Dividend received from {company}
+6/4/2025,Overtime payment,REF687579,6/4/2025,6440.52,,377234.62,Salary
+6/4/2025,Commercial vehicle insurance - Bus,REF231715,8/4/2025,515.14,,376719.48,Insurance-Motor
+6/4/2025,Monthly salary from ABC Corporation,REF509247,7/4/2025,,4430.49,381149.97,Salary
+8/4/2025,Commission payment,REF127423,8/4/2025,,3934.06,385084.03,Salary
+8/4/2025,Fixed deposit creation,REF944951,10/4/2025,,62.76,385146.79,Investment-Dividend received from {company}
+9/4/2025,Grocery shopping at Trader Joe's,REF897109,9/4/2025,113.25,,385033.54,Shopping
+9/4/2025,Monthly salary from Global Solutions,REF452613,11/4/2025,,5820.72,390854.26,Salary
+10/4/2025,Annual multi-trip insurance renewal,REF850294,11/4/2025,99.6,,390754.66,Insurance-Travel
+13/04/2025,Concert tickets - Comedy Show,REF714510,15/04/2025,82.54,,390672.12,Entertainment
+14/04/2025,Contract payment - Design Work,REF278505,16/04/2025,,4033.75,394705.87,Salary
+15/04/2025,Bond purchase - International,REF750496,17/04/2025,2710.32,,391995.55,Investment
+15/04/2025,Educational workshop fee - Project Management,REF877950,16/04/2025,695.45,,391300.1,Education
+16/04/2025,Ride-sharing service - Grubhub,REF443203,16/04/2025,21.3,,391278.8,Transportation
+16/04/2025,Home contents insurance premium,REF615896,18/04/2025,253.3,,391025.5,Insurance-Home
+16/04/2025,Life coverage plan payment to Aviva,REF641931,17/04/2025,271.68,,390753.82,Insurance-Life
+16/04/2025,Dividend received from Progressive,REF389962,17/04/2025,,1804.45,392558.27,Investment
+17/04/2025,Dinner at TGI Fridays,REF398248,17/04/2025,169.06,,392389.21,Dining
+17/04/2025,Gaming subscription renewal,REF628459,19/04/2025,111.98,,392277.23,Entertainment
+17/04/2025,Overtime payment,REF919012,17/04/2025,,3553.09,395830.32,Salary
+18/04/2025,Holiday insurance package,REF855896,19/04/2025,68.97,,395761.35,Insurance-Travel
+20/04/2025,Monthly salary from National Services,REF278663,20/04/2025,,5513.04,401274.39,Salary
+20/04/2025,Car insurance premium for Mazda 3,REF539127,21/04/2025,564.02,,400710.37,Insurance-Motor
+21/04/2025,Pharmacy purchase at Rite Aid,REF628688,21/04/2025,335.98,,400374.39,Healthcare
+21/04/2025,Commission payment,REF140034,21/04/2025,,4760.3,405134.69,Salary
+21/04/2025,Business trip insurance coverage,REF246268,23/04/2025,134.89,,404999.8,Insurance-Travel
+22/04/2025,Family health plan premium,REF860431,22/04/2025,640.13,,404359.67,Insurance-Health
+22/04/2025,Auto insurance renewal - policy #POL77109,REF493623,22/04/2025,432.11,,403927.56,Insurance-Motor
+23/04/2025,Stock purchase - JPM,REF119835,23/04/2025,,3139.29,407066.85,Investment
+24/04/2025,Food delivery from Lyft,REF147281,26/04/2025,195.14,,406871.71,Dining
+24/04/2025,Tuition fee payment - Community College,REF437481,25/04/2025,877.3,,405994.41,Education
+25/04/2025,Monthly salary from National Services,REF888784,27/04/2025,4408.84,,401585.57,Salary
+25/04/2025,Monthly salary from Global Solutions,REF254814,27/04/2025,,7076.43,408662,Salary
+26/04/2025,Breakfast at Chipotle,REF650549,26/04/2025,131.06,,408530.94,Dining
+26/04/2025,Mutual fund investment - Fidelity 500 Index,REF191773,26/04/2025,,4815.83,413346.77,Investment
+26/04/2025,Student loan repayment,REF104267,28/04/2025,630.38,,412716.39,Education
+26/04/2025,Lunch payment - McDonald's,REF903906,27/04/2025,149.43,,412566.96,Dining
+27/04/2025,Bonus payment - Jul-Sep 2024,REF279619,28/04/2025,7333.94,,405233.02,Salary
+28/04/2025,Monthly salary from United Enterprises,REF272261,29/04/2025,,6902.09,412135.11,Salary
+28/04/2025,Auto insurance renewal - policy #POL24410,REF987577,28/04/2025,409.54,,411725.57,Insurance-Motor
+30/04/2025,Home insurance premium - property at 303 Elm Blvd,REF597890,2/5/2025,121.08,,411604.49,Insurance-Home
+30/04/2025,Highway toll payment,REF767601,30/04/2025,72.28,,411532.21,Transportation

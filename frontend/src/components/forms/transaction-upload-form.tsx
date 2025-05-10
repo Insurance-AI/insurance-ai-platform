@@ -74,41 +74,40 @@ export default function TransactionUploadForm() {
         body: formData,
       });
       
-      clearInterval(progressInterval);
-      
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(errorData.message || "Failed to upload file");
       }
       
-      const responseData = await response.json();
-      
-      // Complete the progress bar
-      setUploadProgress(100);
-      setSuccess(true);
-      
-      // Send data to analysis API
+      // After successful upload, analyze the transactions in a single API call
       try {
+        // Create a new FormData object for the analysis request
+        const analysisFormData = new FormData();
+        analysisFormData.append("file", file);
+        
         const analysisResponse = await fetch("http://localhost:8080/api/insurance/analyze", {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          // You might need to adjust this based on what your API expects
-          body: JSON.stringify({
-            fileName: file.name,
-            fileType: file.type,
-          }),
+          body: analysisFormData,
         });
         
         if (!analysisResponse.ok) {
           throw new Error("Failed to analyze transactions");
         }
         
+        // Get the analysis result
+        const analysisData = await analysisResponse.json();
+        
+        // Clear interval and complete progress
+        clearInterval(progressInterval);
+        setUploadProgress(100);
+        setSuccess(true);
+        
+        // Store the analysis data in sessionStorage to pass it to the dashboard
+        sessionStorage.setItem("insuranceAnalysisData", JSON.stringify(analysisData));
+        
         // Redirect to the dashboard after a short delay
         setTimeout(() => {
-          // Use the correct path for your Next.js app
-          router.push("/dashboard");
+          router.push("/recommendations/dashboard");
         }, 1500);
         
       } catch (analysisErr) {

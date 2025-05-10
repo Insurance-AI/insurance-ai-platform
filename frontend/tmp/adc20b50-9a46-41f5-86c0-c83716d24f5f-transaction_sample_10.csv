@@ -1,0 +1,11 @@
+Date,Remark,RefNo,ValueDate,Withdrawal,Deposit,Balance,Category
+1/1/2025,Taxi fare - Uber,REF618647,2/1/2025,66.8,,293644.6,Transportation
+26/03/2024,Car service and maintenance,REF365514,26/03/2024,28.53,,99912.47,Transportation
+11/1/2025,Highway toll payment,REF598077,12/1/2025,39.33,,295665.44,Transportation
+27/05/2024,Business trip insurance coverage,REF331467,27/05/2024,259.32,,126644.16,Insurance-Travel
+10/4/2024,Landline phone bill payment,REF146659,11/4/2024,265.74,,100999.98,Bills
+8/2/2025,Dividend received from AXA,REF986683,10/2/2025,,354.0,308126.68,Investment-Dividend received from {company}
+15/01/2025,Monthly salary from XYZ Industries,REF851725,15/01/2025,6857.46,,287397.35,Salary
+2/5/2024,Property insurance renewal,REF470988,4/5/2024,327.92,,116359.66,Insurance-Home
+20/03/2024,Family health plan premium,REF455959,20/03/2024,181.0,,102150.65,Insurance-Health
+29/03/2025,Fixed deposit creation,REF835528,29/03/2025,3970.8,,372586.19,Investment

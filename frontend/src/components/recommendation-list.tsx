@@ -4,7 +4,6 @@ import { InsuranceRecommendations } from "@/lib/types";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { formatPercentage, getPriorityColor } from "@/lib/utils";
 import { Shield, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 interface RecommendationListProps {
   recommendations: InsuranceRecommendations;
