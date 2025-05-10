@@ -74,23 +74,23 @@ No more guesswork. No more manipulation. Just smart insurance decisions.
 
 ### 🖥️ Landing page
 
-![Dashboard UI](./assests/main_page.png)
+![Main Page UI](./assests/main_page.png)
 
 ### 🖥️ Dashboard UI
 
 ![Dashboard UI](./assets/dashboard.png)
 
-### 📤 Upload Screen
-![Upload Screen](./assets/upload_screen.png)
+### 📤 Spending analysis
+![Spending analysis](./assets/spending.png)
 
-### 📄 Recommendation Report
-![Recommendation Report](./assets/report.png)
+### 📄 Category wise
+![Category wise](./assets/category.png)
 
-### 📊 Risk Analysis Charts
-![Risk Analysis](./assets/risk_analysis.png)
+### 📊 Insurence Recommandation
+![Insurence Recommandation](./assets/insurence_reco.png)
 
-### 💡 Insurance Preference Predictions
-![Insurance Prediction](./assets/insurance_prediction.png)
+### 💡Summary of analysis
+![Summary of analysis](./assets/summary.png)
 
 
 ---
