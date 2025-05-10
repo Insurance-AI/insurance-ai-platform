@@ -82,7 +82,7 @@ const RecommendationForm = () => {
 
       localStorage.setItem("comparison_result", JSON.stringify(compareResponse.data));
 
-      // router.push("/comparision-dashboard");
+      router.push("/comparision-dashboard");
     } catch (error) {
       console.error("Error fetching recommendations:", error);
     }

@@ -6,8 +6,8 @@ import { useEffect, useState } from 'react';
 interface Policy {
     insurance_name: string;
     insurance_type: string;
-    entry_age_min: number;
-    entry_age_max: number;
+    policy_term_min: number;
+    policy_term_max: number;
     sum_assured_min: number;
     sum_assured_unit_note?: string;
     key_benefits_or_riders: string[] | string;
@@ -26,6 +26,22 @@ interface PoliciesData {
     };
 }
 
+// ✅ Normalizes raw policy data
+const normalizePolicy = (raw: any): Policy => ({
+    insurance_name: raw["Insurance Name"] ?? '',
+    insurance_type: raw["Insurance Type"] ?? '',
+    policy_term_min: Number(raw["Policy Term Min"]) || 0,
+    policy_term_max: Number(raw["Policy Term Max"]) || 0,
+    sum_assured_min: Number(raw["Sum Assured Min"]) || 0,
+    sum_assured_unit_note: raw["Sum Assured Unit Note"] || '',
+    key_benefits_or_riders: raw["Key Benefits/Riders"] || [],
+    medical_considerations: raw["Medical Considerations"] || '',
+    premium_payment_option: raw["Premium Payment Option"] || '',
+    features_description: raw["Features Description"] || '',
+    sample_premium: Number(raw["Sample Premium"]) || 0,
+    sample_premium_note: raw["Sample Premium Note"] || '',
+});
+
 const ComparisonDashboardPage = () => {
     const searchParams = useSearchParams();
     const result = searchParams.get('result');
@@ -34,7 +50,6 @@ const ComparisonDashboardPage = () => {
     useEffect(() => {
         let parsed: PoliciesData | null = null;
 
-        // Try parsing from URL parameter
         if (typeof result === 'string') {
             try {
                 parsed = JSON.parse(result);
@@ -43,7 +58,6 @@ const ComparisonDashboardPage = () => {
             }
         }
 
-        // If parsing from URL fails or is not present, fallback to localStorage
         if (!parsed) {
             const storedData = localStorage.getItem('comparison_result');
             if (storedData) {
@@ -51,8 +65,8 @@ const ComparisonDashboardPage = () => {
                     const parsedStored = JSON.parse(storedData);
                     if (parsedStored?.policies) {
                         parsed = {
-                            insurance_plans: parsedStored.policies,
-                            comparison_summary: parsedStored.comparison_summary || { notes: [] }
+                            insurance_plans: parsedStored.policies.map(normalizePolicy),
+                            comparison_summary: parsedStored.comparison_summary || { notes: [] },
                         };
                     }
                 } catch (error) {
@@ -79,8 +93,8 @@ const ComparisonDashboardPage = () => {
     const attributesToShow: { key: keyof Policy; label: string }[] = [
         { key: 'insurance_name', label: 'Insurance Name' },
         { key: 'insurance_type', label: 'Insurance Type' },
-        { key: 'entry_age_min', label: 'Min Entry Age' },
-        { key: 'entry_age_max', label: 'Max Entry Age' },
+        { key: 'policy_term_min', label: 'Min Policy Term' },
+        { key: 'policy_term_max', label: 'Max Policy Term' },
         { key: 'sum_assured_min', label: 'Min Sum Assured' },
         { key: 'key_benefits_or_riders', label: 'Key Benefits/Riders' },
         { key: 'medical_considerations', label: 'Medical Considerations' },
@@ -92,7 +106,7 @@ const ComparisonDashboardPage = () => {
     const renderCellValue = (policy: Policy, attributeKey: keyof Policy) => {
         const value = policy[attributeKey];
         if (Array.isArray(value)) return value.join(', ');
-        if (value === undefined || value === null) return <span className="text-gray-500">N/A</span>;
+        if (value === undefined || value === null || value === '') return <span className="text-gray-500">N/A</span>;
         return String(value);
     };
 
