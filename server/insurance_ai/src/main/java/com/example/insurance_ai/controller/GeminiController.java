@@ -19,8 +19,8 @@ public class GeminiController {
     }
 
     @PostMapping("/compare")
-    public String compareInsurancePolicies(@RequestBody InsuranceResponse request) throws IOException {
-        List<PlanRecommendation> plans = request.getRecommendations();
+    public String compareInsurancePolicies(@RequestBody List<PlanRecommendation> plans) throws IOException {
+        System.out.println(plans);
 
         StringBuilder promptBuilder = new StringBuilder();
         promptBuilder.append("Please generate a JSON output comparing insurance policies. I will provide the policy data as a list of comma-separated strings, where each string represents one policy and contains 10 specific fields in the following order:\n\n")
@@ -49,6 +49,7 @@ public class GeminiController {
 
         return geminiService.getInsuranceComparisonJson(promptBuilder.toString());
     }
+
 
     private int getMinPolicyTerm(String range) {
         try {

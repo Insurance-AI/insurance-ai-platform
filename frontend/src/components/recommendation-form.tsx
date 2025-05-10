@@ -76,6 +76,12 @@ export default function RecommendationForm() {
 
       setRecommendations(data.recommendations || [])
       setShowRecommendations(true)
+
+      const compareResponse = await axios.post("http://localhost:8080/api/gemini/compare", data.recommendations);
+
+      
+      console.log("Comparison result:", compareResponse.data);
+
     } catch (error) {
       console.error("Error fetching recommendations:", error)
     }
