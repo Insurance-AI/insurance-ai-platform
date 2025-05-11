@@ -44,7 +44,7 @@ No more guesswork. No more manipulation. Just smart insurance decisions.
 | Python     | Data processing, AI/ML pipelines       |
 | FastAPI    | Backend APIs & AI endpoints            |
 | HuggingFace Spaces | Model hosting & prototyping     |
-| Spring Boot| Microservices & advanced backend logic |
+| Spring Boot| Advanced backend logic                 |
 | Next.js    | Frontend framework                     |
 | TypeScript | Strongly typed frontend development    |
 
